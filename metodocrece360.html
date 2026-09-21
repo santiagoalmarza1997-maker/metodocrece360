@@ -146,33 +146,98 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 72px;
-      gap: 20px;
+      height: 70px;
+      gap: 16px;
     }
 
     .logo-container {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       text-decoration: none;
       flex-shrink: 0;
     }
 
-    .site-header-logo {
-      height: 56px;
-      width: auto;
-      max-width: 190px;
+    .nav-compass-emblem {
+      height: 46px;
+      width: 46px;
       object-fit: contain;
-      background: transparent;
-      padding: 0;
-      border-radius: 0;
-      box-shadow: none;
-      transition: transform 0.25s ease;
-      display: block;
+      flex-shrink: 0;
+      filter: drop-shadow(0 2px 8px rgba(21, 24, 29, 0.12));
+      transition: transform 0.3s ease;
     }
 
-    .site-header-logo:hover {
-      transform: translateY(-1px) scale(1.03);
+    .logo-container:hover .nav-compass-emblem {
+      transform: rotate(15deg) scale(1.05);
+    }
+
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      line-height: 1.05;
+    }
+
+    .nav-brand-kicker {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 8.5px;
+      font-weight: 700;
+      color: #757B86;
+      letter-spacing: 3.8px;
+      text-transform: uppercase;
+      margin-bottom: 1px;
+    }
+
+    .nav-brand-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: #23272C;
+      letter-spacing: -0.4px;
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+
+    .nav-brand-gold {
+      color: #B79A66;
+      font-weight: 900;
+    }
+
+    .nav-brand-reg {
+      font-size: 11px;
+      vertical-align: super;
+      margin-left: 1px;
+    }
+
+    .nav-brand-tagline {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 6.5px;
+      font-weight: 800;
+      color: #8C929C;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      margin-top: 1px;
+    }
+
+    @media (max-width: 480px) {
+      .nav-brand-tagline {
+        display: none;
+      }
+      .nav-brand-title {
+        font-size: 17px;
+      }
+      .nav-brand-kicker {
+        font-size: 7.5px;
+        letter-spacing: 2.8px;
+      }
+      .nav-compass-emblem {
+        height: 38px;
+        width: 38px;
+      }
+      .nav-wrapper {
+        height: 60px;
+      }
     }
 
     .nav-links {
@@ -1856,10 +1921,53 @@
       }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .hero-mockup-section {
-        padding: 28px 0 40px;
+        background: linear-gradient(180deg, #15181D 0%, #1F2328 100%) !important;
+        padding: 28px 0 44px;
       }
+      /* Crucial fix: hide diagonal curve on mobile to eliminate white split on text */
+      .hero-curved-bg {
+        display: none !important;
+      }
+      .hero-compass-watermark {
+        right: 50%;
+        transform: translate(50%, -50%);
+        opacity: 0.12;
+        width: 320px;
+        height: 320px;
+      }
+      .hero-mockup-headline {
+        font-size: clamp(23px, 6.2vw, 32px);
+        line-height: 1.18;
+        text-align: left;
+        margin-bottom: 14px;
+      }
+      .hero-mockup-description {
+        font-size: 13.5px;
+        line-height: 1.55;
+        color: #E2E6EA;
+        margin-bottom: 18px;
+      }
+      .hero-feature-checklist {
+        gap: 11px;
+        margin-bottom: 20px;
+      }
+      .hero-feature-checklist li {
+        font-size: 13px;
+        line-height: 1.4;
+      }
+      .hero-proof-bar {
+        gap: 7px;
+        margin-bottom: 24px;
+      }
+      .hero-form-card {
+        padding: 22px 16px 20px;
+        margin-top: 8px;
+      }
+    }
+
+    @media (max-width: 768px) {
       .hero-mockup-team-wrap {
         margin-bottom: -24px;
       }
@@ -1868,17 +1976,17 @@
         margin: 0 auto;
       }
       .floating-cards-row-wrap {
-        margin-top: -30px;
+        margin-top: 15px;
       }
       .floating-cards-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 12px;
       }
       .floating-pill-card {
-        padding: 14px 10px;
+        padding: 16px 12px;
       }
       .floating-card-title {
-        font-size: 12.5px;
+        font-size: 12px;
       }
       .modules-cards-grid {
         grid-template-columns: 1fr;
@@ -1918,6 +2026,53 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* GOLDEN RADIANT GLOW FOR CTA BUTTONS */
+    .btn-mockup-coral, .btn-hero-submit {
+      background: linear-gradient(135deg, #E2C07D 0%, #B79A66 45%, #9E7F47 100%) !important;
+      color: #FFFFFF !important;
+      text-shadow: 0 1px 2px rgba(20, 24, 29, 0.45);
+      border: 1.5px solid rgba(255, 255, 255, 0.6) !important;
+      position: relative;
+      overflow: hidden;
+      animation: goldGlowPulse 2.8s infinite ease-in-out;
+    }
+
+    @keyframes goldGlowPulse {
+      0%, 100% {
+        box-shadow: 0 0 16px rgba(226, 192, 125, 0.55), 0 4px 14px rgba(183, 154, 102, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 30px rgba(245, 215, 145, 0.95), 0 6px 22px rgba(183, 154, 102, 0.7);
+        border-color: rgba(255, 255, 255, 0.95);
+      }
+    }
+
+    .btn-mockup-coral:hover, .btn-hero-submit:hover {
+      background: linear-gradient(135deg, #EDCC8B 0%, #C3A46B 50%, #A9894F 100%) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 0 35px rgba(245, 215, 145, 1), 0 8px 26px rgba(183, 154, 102, 0.8) !important;
+    }
+
+    /* COMPASS WATERMARK IN BACKGROUND */
+    .hero-compass-watermark {
+      position: absolute;
+      right: 2%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: clamp(340px, 46vw, 660px);
+      height: clamp(340px, 46vw, 660px);
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.16;
+      animation: slowRotateCompass 160s linear infinite;
+    }
+
+    @keyframes slowRotateCompass {
+      from { transform: translateY(-50%) rotate(0deg); }
+      to { transform: translateY(-50%) rotate(360deg); }
+    }
+
   </style>
 </head>
 <body>
@@ -1927,7 +2082,12 @@
     <div class="container">
       <div class="nav-wrapper">
         <a href="#hero" class="logo-container" title="Método Crece 360">
-          <img src="assets_crece360/logo_nav.png" alt="Método Crece 360 Logo" class="site-header-logo">
+          <img src="assets_crece360/emblem_compass.png" alt="Emblema Método Crece 360" class="nav-compass-emblem">
+          <div class="nav-brand-text">
+            <span class="nav-brand-kicker">M É T O D O</span>
+            <span class="nav-brand-title">CRECE <span class="nav-brand-gold">360<span class="nav-brand-reg">®</span></span></span>
+            <span class="nav-brand-tagline">EQUILIBRIO • CONOCIMIENTO • MARCA • ACCIÓN</span>
+          </div>
         </a>
 
         <ul class="nav-links">
@@ -1945,8 +2105,30 @@
     </div>
   </header>
 
-  <!-- 2. HERO SECTION (CONTRASTE DE DOS COLORES: CURVA VERDE BOSQUE & FONDO ARENA) -->
+  <!-- 2. HERO SECTION (CONTRASTE DE DOS COLORES CON MARCA DE AGUA BRÚJULA 360°) -->
   <section class="hero-mockup-section" id="hero">
+    <!-- Marca de Agua Vectorial de la Rosa de los Vientos / Brújula 360° en el Fondo -->
+    <div class="hero-compass-watermark" aria-hidden="true">
+      <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="250" cy="250" r="236" stroke="#B79A66" stroke-width="1.8" stroke-dasharray="3 5" opacity="0.45"/>
+        <circle cx="250" cy="250" r="195" stroke="#B79A66" stroke-width="2.2" opacity="0.4"/>
+        <circle cx="250" cy="250" r="145" stroke="#FFFFFF" stroke-width="1.2" opacity="0.25"/>
+        <line x1="250" y1="8" x2="250" y2="492" stroke="#B79A66" stroke-width="2" opacity="0.45"/>
+        <line x1="8" y1="250" x2="492" y2="250" stroke="#B79A66" stroke-width="2" opacity="0.45"/>
+        <line x1="75" y1="75" x2="425" y2="425" stroke="#B79A66" stroke-width="1.2" stroke-dasharray="3 4" opacity="0.35"/>
+        <line x1="75" y1="425" x2="425" y2="75" stroke="#B79A66" stroke-width="1.2" stroke-dasharray="3 4" opacity="0.35"/>
+        <polygon points="250,16 250,250 234,250" fill="#B79A66" opacity="0.5"/>
+        <polygon points="250,16 266,250 250,250" fill="#FFFFFF" opacity="0.22"/>
+        <polygon points="250,484 250,250 266,250" fill="#B79A66" opacity="0.5"/>
+        <polygon points="250,484 234,250 250,250" fill="#FFFFFF" opacity="0.22"/>
+        <polygon points="484,250 250,250 250,234" fill="#B79A66" opacity="0.5"/>
+        <polygon points="484,250 250,266 250,250" fill="#FFFFFF" opacity="0.22"/>
+        <polygon points="16,250 250,250 250,266" fill="#B79A66" opacity="0.5"/>
+        <polygon points="16,250 250,234 250,250" fill="#FFFFFF" opacity="0.22"/>
+        <circle cx="250" cy="250" r="16" fill="#B79A66" opacity="0.65"/>
+        <circle cx="250" cy="250" r="7" fill="#FFFFFF" opacity="0.85"/>
+      </svg>
+    </div>
     <!-- Silueta Orgánica Verde Bosque en Contraste con Fondo Arena del Mockup -->
     <svg class="hero-curved-bg" viewBox="0 0 1440 560" preserveAspectRatio="none">
       <defs>
