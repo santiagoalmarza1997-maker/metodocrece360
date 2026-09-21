@@ -23,39 +23,48 @@
 
   <style>
     :root {
-      /* PALETA OFICIAL MOCKUP CRECE 360 (Forest Green, Warm Sand/Champagne, Vibrant Coral & Soft Gold) */
-      --bg-body: #FAF6F0; /* Arena / Marfil cálido del mockup */
-      --bg-subtle: #F3ECE2; /* Champán suave */
-      --bg-warm: #EADFCF; /* Arena más contrastada */
-      --bg-card: #FFFFFF; /* Tarjetas blancas limpias */
-      --bg-card-elevated: #FFFDF9;
+      /* PALETA OFICIAL HOMOLOGADA CON EL LOGO MÉTODO CRECE 360® */
+      /* 1. Fondo Blanco Perla & Dial Luminoso del Logo */
+      --bg-body: #F8F9FB; /* Blanco perla satinado oficial del logo */
+      --bg-subtle: #F0F2F5; /* Perla suave con tinte titanio */
+      --bg-warm: #E6E9EE; /* Gris plata suave */
+      --bg-card: #FFFFFF; /* Tarjetas blancas puras de alto contraste */
+      --bg-card-elevated: #FFFFFF;
       
-      --forest-dark: #203126; /* Verde bosque ultra profundo */
-      --forest-main: #2C4035; /* Verde bosque principal del Hero */
-      --forest-light: #3A5345; /* Verde bosque acento */
+      /* 2. Antracita & Grafito Oscuro del Logo (Palabra CRECE, dial y sombras) */
+      --forest-dark: #15181D; /* Grafito ultra profundo */
+      --forest-main: #23272C; /* Antracita oficial de CRECE */
+      --forest-light: #323842; /* Grafito pizarra acento */
       
-      --header-gold: #C6A266; /* Barra superior dorada suave del mockup */
-      --header-gold-light: #DFCA9B;
+      /* 3. Dorado Noble & Oro Champán Perlado del Logo (360°, biseles y estrellas) */
+      --brand-primary: #B79A66; /* Dorado noble oficial */
+      --brand-primary-light: #C3A46B; /* Oro radiante / brillo metálico */
+      --brand-gold-glow: #DEC38E; /* Oro perla iluminado */
+      --brand-gold-dark: #907240; /* Sombra ocre del bisel */
       
-      --text-dark: #1E2922; /* Carbón oscuro con matiz forestal */
-      --text-body: #3D4A41; /* Grafito suave */
-      --text-muted: #6B7B71; /* Gris verdoso atenuado */
-      --text-light: #94A399;
+      --header-gold: #B79A66; /* Barra superior dorada */
+      --header-gold-light: #DEC38E;
       
-      --brand-primary: #C8A265; /* Oro champán satinado */
-      --brand-coral: #E06D53; /* Coral terracota oficial de botones del mockup */
-      --brand-coral-hover: #C9563C;
-      --brand-gold-btn: #C5A168; /* Botón secundario dorado del mockup */
-      --brand-gold-hover: #AF8B51;
+      /* 4. Textos: Grafito, Titanio y Acero Perlado */
+      --text-dark: #1F2328; /* Carbón oscuro del logo */
+      --text-body: #3D434B; /* Grafito de lectura neutro */
+      --text-muted: #757B86; /* Gris titanio equilibrado */
+      --text-light: #9DA3AE;
       
-      --border-light: rgba(44, 64, 53, 0.08);
-      --border-warm: rgba(200, 162, 101, 0.3);
-      --border-champagne: #E4D7C5;
+      /* 5. Botones de Acción Primarios & Secundarios (Dorado Noble y Antracita) */
+      --brand-coral: #B79A66; /* Homologado: botón principal en Oro Noble */
+      --brand-coral-hover: #A58752;
+      --brand-gold-btn: #C3A46B; /* Botón secundario oro champán */
+      --brand-gold-hover: #987B44;
       
-      --shadow-sm: 0 2px 10px rgba(32, 49, 38, 0.04);
-      --shadow-md: 0 10px 30px rgba(32, 49, 38, 0.08);
-      --shadow-lg: 0 20px 50px rgba(32, 49, 38, 0.12);
-      --shadow-coral: 0 8px 24px rgba(224, 109, 83, 0.35);
+      --border-light: rgba(35, 39, 44, 0.08);
+      --border-warm: rgba(183, 154, 102, 0.32);
+      --border-champagne: #D9DFE8;
+      
+      --shadow-sm: 0 2px 10px rgba(21, 24, 29, 0.04);
+      --shadow-md: 0 10px 30px rgba(21, 24, 29, 0.08);
+      --shadow-lg: 0 20px 50px rgba(21, 24, 29, 0.12);
+      --shadow-coral: 0 8px 24px rgba(183, 154, 102, 0.42);
       
       --radius-sm: 10px;
       --radius-md: 18px;
@@ -125,9 +134,9 @@
       top: 0;
       width: 100%;
       z-index: 1000;
-      background: linear-gradient(90deg, #BA975E 0%, #CDAB73 50%, #B8945B 100%);
+      background: linear-gradient(90deg, #A8864F 0%, #B79A66 50%, #9F804B 100%);
       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      box-shadow: 0 4px 18px rgba(32, 49, 38, 0.15);
+      box-shadow: 0 4px 18px rgba(21, 24, 29, 0.15);
       transition: var(--transition);
     }
 
@@ -155,14 +164,14 @@
       background: #FFFFFF;
       padding: 3px 8px;
       border-radius: 9px;
-      box-shadow: 0 3px 12px rgba(32, 49, 38, 0.18);
+      box-shadow: 0 3px 12px rgba(21, 24, 29, 0.15);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
       display: block;
     }
 
     .site-header-logo:hover {
       transform: translateY(-2px) scale(1.02);
-      box-shadow: 0 6px 18px rgba(32, 49, 38, 0.25);
+      box-shadow: 0 6px 18px rgba(21, 24, 29, 0.22);
     }
 
     .nav-links {
@@ -196,7 +205,7 @@
     }
 
     .btn-mockup-coral {
-      background: linear-gradient(135deg, #E66548 0%, #D45437 100%);
+      background: linear-gradient(135deg, #CFA763 0%, #B79A66 50%, #9C783C 100%);
       color: #FFFFFF;
       font-family: 'Outfit', sans-serif;
       font-size: 13px;
@@ -207,7 +216,7 @@
       border-radius: var(--radius-sm);
       border: 1px solid rgba(255, 255, 255, 0.4);
       text-decoration: none;
-      box-shadow: 0 4px 15px rgba(212, 84, 55, 0.4);
+      box-shadow: 0 4px 15px rgba(183, 154, 102, 0.45);
       transition: var(--transition);
       display: inline-flex;
       align-items: center;
@@ -216,14 +225,14 @@
     }
 
     .btn-mockup-coral:hover {
-      background: linear-gradient(135deg, #EE7357 0%, #DF593A 100%);
+      background: linear-gradient(135deg, #DBB672 0%, #C3A46B 50%, #AB8749 100%);
       transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(212, 84, 55, 0.55);
+      box-shadow: 0 8px 24px rgba(183, 154, 102, 0.55);
     }
 
     /* HERO SECTION CON CONTRASTE DE DOS COLORES (CURVA VERDE BOSQUE & FONDO ARENA) */
     .hero-mockup-section {
-      background-color: #FAF6F0;
+      background-color: #F8F9FB;
       color: #FFFFFF;
       position: relative;
       padding: 32px 0 54px;
@@ -268,7 +277,7 @@
 
     .hero-mockup-description {
       font-size: 14.5px;
-      color: #E2EBE5;
+      color: #E8ECEF;
       line-height: 1.5;
       max-width: 530px;
       margin-bottom: 18px;
@@ -295,7 +304,7 @@
       align-items: flex-start;
       gap: 10px;
       font-size: 13.5px;
-      color: #E2EBE5;
+      color: #E8ECEF;
       line-height: 1.4;
     }
 
@@ -303,7 +312,7 @@
       width: 20px;
       height: 20px;
       background: #DEC38E;
-      color: #213529;
+      color: #1F2328;
       border-radius: 50%;
       display: inline-flex;
       align-items: center;
@@ -338,11 +347,11 @@
 
     /* HERO APPLICATION FORM CARD (HIGH CONVERTING B2B ARCHITECTURE) */
     .hero-form-card {
-      background: linear-gradient(145deg, #FFFFFF 0%, #FAF6F0 100%);
+      background: linear-gradient(145deg, #FFFFFF 0%, #F8F9FB 100%);
       border: 1.5px solid #DEC38E;
       border-radius: 20px;
       padding: 24px 22px 20px;
-      box-shadow: 0 16px 40px rgba(18, 30, 23, 0.35), 0 0 0 1px rgba(255,255,255,0.9) inset;
+      box-shadow: 0 16px 40px rgba(21, 24, 29, 0.35), 0 0 0 1px rgba(255,255,255,0.9) inset;
       position: relative;
       z-index: 10;
       color: var(--text-dark);
@@ -352,15 +361,15 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(200, 162, 101, 0.15);
-      color: #9A6F2A;
+      background: rgba(183, 154, 102, 0.15);
+      color: #8C6E33;
       font-size: 11px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.8px;
       padding: 4px 10px;
       border-radius: var(--radius-pill);
-      border: 1px solid rgba(200, 162, 101, 0.35);
+      border: 1px solid rgba(183, 154, 102, 0.35);
       margin-bottom: 8px;
     }
 
@@ -368,14 +377,14 @@
       font-family: 'Outfit', sans-serif;
       font-size: 20px;
       font-weight: 800;
-      color: #1E2922;
+      color: #1F2328;
       line-height: 1.2;
       margin-bottom: 4px;
     }
 
     .hero-form-subtitle {
       font-size: 12.5px;
-      color: #5D6D62;
+      color: #6C727D;
       line-height: 1.4;
       margin-bottom: 14px;
     }
@@ -396,7 +405,7 @@
     .hero-input-label {
       font-size: 11px;
       font-weight: 800;
-      color: #2C4035;
+      color: #23272C;
       letter-spacing: 0.3px;
       text-transform: uppercase;
     }
@@ -406,24 +415,24 @@
       height: 38px;
       padding: 7px 12px;
       border-radius: 8px;
-      border: 1.2px solid #D6C8B4;
+      border: 1.2px solid #D1D6E0;
       background: #FFFFFF;
       font-size: 13px;
       font-family: 'Plus Jakarta Sans', sans-serif;
-      color: #1E2922;
+      color: #1F2328;
       transition: all 0.25s ease;
       outline: none;
     }
 
     .hero-form-input:focus, .hero-form-select:focus {
-      border-color: #C8A265;
-      box-shadow: 0 0 0 3px rgba(200, 162, 101, 0.2);
+      border-color: #B79A66;
+      box-shadow: 0 0 0 3px rgba(183, 154, 102, 0.2);
     }
 
     .btn-hero-submit {
       width: 100%;
       height: 46px;
-      background: linear-gradient(135deg, #E66548 0%, #D45437 100%);
+      background: linear-gradient(135deg, #CFA763 0%, #B79A66 50%, #9C783C 100%);
       color: #FFFFFF;
       font-family: 'Outfit', sans-serif;
       font-size: 13.5px;
@@ -433,7 +442,7 @@
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      box-shadow: 0 8px 22px rgba(212, 84, 55, 0.45);
+      box-shadow: 0 8px 22px rgba(183, 154, 102, 0.45);
       transition: all 0.28s ease;
       display: flex;
       align-items: center;
@@ -443,9 +452,9 @@
     }
 
     .btn-hero-submit:hover {
-      background: linear-gradient(135deg, #EE7357 0%, #DF593A 100%);
+      background: linear-gradient(135deg, #DBB672 0%, #C3A46B 50%, #AB8749 100%);
       transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(212, 84, 55, 0.6);
+      box-shadow: 0 12px 28px rgba(183, 154, 102, 0.6);
     }
 
     .hero-form-security {
@@ -454,7 +463,7 @@
       justify-content: center;
       gap: 6px;
       font-size: 11px;
-      color: #728277;
+      color: #7A808C;
       margin-top: 8px;
       font-weight: 500;
     }
@@ -463,11 +472,11 @@
     /* SECCIÓN RED DE MENTORES & COMUNIDAD DE APOYO */
     .section-team-ecosystem {
       padding: 72px 0 64px;
-      background: linear-gradient(180deg, #FBF8F3 0%, #F5EDE2 100%);
+      background: linear-gradient(180deg, #F8F9FB 0%, #F0F2F5 100%);
       position: relative;
       overflow: hidden;
-      border-top: 1px solid rgba(200, 162, 101, 0.22);
-      border-bottom: 1px solid rgba(200, 162, 101, 0.22);
+      border-top: 1px solid rgba(183, 154, 102, 0.22);
+      border-bottom: 1px solid rgba(183, 154, 102, 0.22);
     }
 
     .team-ecosystem-grid {
@@ -491,9 +500,9 @@
       height: 90%;
       bottom: 0;
       border-radius: 28px;
-      background: linear-gradient(145deg, rgba(37, 56, 44, 0.07) 0%, rgba(200, 162, 101, 0.18) 100%);
+      background: linear-gradient(145deg, rgba(35, 39, 44, 0.05) 0%, rgba(183, 154, 102, 0.15) 100%);
       z-index: 1;
-      border: 1px solid rgba(200, 162, 101, 0.25);
+      border: 1px solid rgba(183, 154, 102, 0.25);
     }
 
     .team-ecosystem-img {
@@ -503,7 +512,7 @@
       max-width: 520px;
       height: auto;
       object-fit: contain;
-      filter: drop-shadow(0 18px 30px rgba(18, 30, 23, 0.22));
+      filter: drop-shadow(0 18px 30px rgba(21, 24, 29, 0.18));
     }
 
     .team-ecosystem-content {
@@ -515,15 +524,15 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(200, 162, 101, 0.15);
-      color: #9A6F2A;
+      background: rgba(183, 154, 102, 0.15);
+      color: #8C6E33;
       font-size: 11px;
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.8px;
       padding: 5px 12px;
       border-radius: var(--radius-pill);
-      border: 1px solid rgba(200, 162, 101, 0.35);
+      border: 1px solid rgba(183, 154, 102, 0.35);
       margin-bottom: 12px;
     }
 
@@ -531,14 +540,14 @@
       font-family: 'Playfair Display', serif;
       font-size: clamp(28px, 3.2vw, 40px);
       font-weight: 800;
-      color: #213529;
+      color: #1F2328;
       line-height: 1.2;
       margin-bottom: 16px;
     }
 
     .team-ecosystem-desc {
       font-size: 15px;
-      color: #4A5B50;
+      color: #4B525D;
       line-height: 1.6;
       margin-bottom: 24px;
     }
@@ -555,25 +564,25 @@
       align-items: flex-start;
       gap: 14px;
       background: #FFFFFF;
-      border: 1px solid rgba(200, 162, 101, 0.25);
+      border: 1px solid rgba(183, 154, 102, 0.25);
       border-radius: 14px;
       padding: 15px 18px;
-      box-shadow: 0 4px 14px rgba(33, 53, 41, 0.04);
+      box-shadow: 0 4px 14px rgba(21, 24, 29, 0.04);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .team-benefit-card:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 22px rgba(33, 53, 41, 0.08);
-      border-color: #C8A265;
+      box-shadow: 0 8px 22px rgba(21, 24, 29, 0.08);
+      border-color: #B79A66;
     }
 
     .team-benefit-icon {
       width: 38px;
       height: 38px;
       border-radius: 10px;
-      background: rgba(200, 162, 101, 0.15);
-      color: #9A6F2A;
+      background: rgba(183, 154, 102, 0.15);
+      color: #8C6E33;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -586,13 +595,13 @@
       font-family: 'Outfit', sans-serif;
       font-size: 14.5px;
       font-weight: 700;
-      color: #213529;
+      color: #1F2328;
       margin-bottom: 3px;
     }
 
     .team-benefit-text p {
       font-size: 13px;
-      color: #617367;
+      color: #6D7480;
       line-height: 1.45;
       margin: 0;
     }
@@ -614,7 +623,7 @@
       width: 220px;
       height: 220px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(65, 94, 77, 0.28) 0%, rgba(65, 94, 77, 0) 70%);
+      background: radial-gradient(circle, rgba(183, 154, 102, 0.22) 0%, rgba(183, 154, 102, 0) 70%);
       pointer-events: none;
       z-index: -1;
     }
@@ -626,15 +635,15 @@
     }
 
     .floating-pill-card {
-      background: linear-gradient(145deg, #FFFDF9 0%, #F5ECE0 100%);
-      border: 1.5px solid #DFC9A3;
+      background: linear-gradient(145deg, #FFFFFF 0%, #F4F6F9 100%);
+      border: 1.5px solid #DEC38E;
       border-radius: 18px;
       padding: 12px 14px 14px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(32, 49, 38, 0.08), inset 0 1px 0 rgba(255,255,255,0.9);
+      box-shadow: 0 10px 25px rgba(21, 24, 29, 0.08), inset 0 1px 0 rgba(255,255,255,0.9);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
       cursor: pointer;
       position: relative;
@@ -646,7 +655,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background-image: radial-gradient(#C8A265 0.75px, transparent 0.75px);
+      background-image: radial-gradient(#B79A66 0.75px, transparent 0.75px);
       background-size: 13px 13px;
       opacity: 0.12;
       pointer-events: none;
@@ -654,8 +663,8 @@
 
     .floating-pill-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 16px 36px rgba(32, 49, 38, 0.15), 0 0 16px rgba(200, 162, 101, 0.25);
-      border-color: #C8A265;
+      box-shadow: 0 16px 36px rgba(21, 24, 29, 0.15), 0 0 16px rgba(183, 154, 102, 0.25);
+      border-color: #B79A66;
       background: #FFFFFF;
     }
 
@@ -686,7 +695,7 @@
       font-family: 'Outfit', sans-serif;
       font-size: 13px;
       font-weight: 800;
-      color: #24352B;
+      color: #1F2328;
       text-transform: uppercase;
       letter-spacing: 0.3px;
       line-height: 1.25;
@@ -696,7 +705,7 @@
     }
 
     .card-step-num {
-      color: #C88D3D;
+      color: #B79A66;
       font-weight: 900;
       margin-right: 3px;
     }
@@ -712,7 +721,7 @@
       font-family: 'Outfit', sans-serif;
       font-size: clamp(26px, 3.2vw, 36px);
       font-weight: 900;
-      color: #1E2922;
+      color: #1F2328;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       margin-bottom: 45px;
@@ -729,7 +738,7 @@
       border: 1.5px solid #E2D5C3;
       border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 10px 28px rgba(32, 49, 38, 0.06);
+      box-shadow: 0 10px 28px rgba(21, 24, 29, 0.06);
       transition: var(--transition);
       display: flex;
       flex-direction: column;
@@ -737,15 +746,15 @@
 
     .module-course-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 18px 40px rgba(32, 49, 38, 0.12);
-      border-color: #E06D53;
+      box-shadow: 0 18px 40px rgba(21, 24, 29, 0.12);
+      border-color: #B79A66;
     }
 
     .module-thumbnail-wrap {
       position: relative;
       width: 100%;
       height: 160px;
-      background: #1C2B22;
+      background: #191D23;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -769,7 +778,7 @@
       position: absolute;
       width: 44px;
       height: 44px;
-      background: rgba(224, 109, 83, 0.9);
+      background: rgba(183, 154, 102, 0.95);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -782,7 +791,7 @@
 
     .module-course-card:hover .module-play-btn {
       transform: scale(1.15);
-      background: #E06D53;
+      background: #B79A66;
     }
 
     .module-card-body {
@@ -795,7 +804,7 @@
     .module-badge-tag {
       font-size: 10px;
       font-weight: 800;
-      color: #E06D53;
+      color: #B79A66;
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-bottom: 6px;
@@ -805,7 +814,7 @@
       font-family: 'Outfit', sans-serif;
       font-size: 15px;
       font-weight: 800;
-      color: #2C4035;
+      color: #23272C;
       text-transform: uppercase;
       line-height: 1.3;
       margin-bottom: 12px;
@@ -822,7 +831,7 @@
 
     .module-progress-fill {
       height: 100%;
-      background: linear-gradient(90deg, #C5A168 0%, #E06D53 100%);
+      background: linear-gradient(90deg, #C3A46B 0%, #B79A66 100%);
       border-radius: 999px;
     }
 
@@ -1900,9 +1909,9 @@
     <svg class="hero-curved-bg" viewBox="0 0 1440 560" preserveAspectRatio="none">
       <defs>
         <linearGradient id="heroTwoToneGreen" x1="0%" y1="0%" x2="70%" y2="100%">
-          <stop offset="0%" stop-color="#213529"/>
-          <stop offset="50%" stop-color="#2B4133"/>
-          <stop offset="100%" stop-color="#25382C"/>
+          <stop offset="0%" stop-color="#16191E"/>
+          <stop offset="50%" stop-color="#23272C"/>
+          <stop offset="100%" stop-color="#1B1E24"/>
         </linearGradient>
       </defs>
       <!-- Curva que desciende en arco elegante hacia el cuadrante derecho inferior -->
@@ -2014,16 +2023,16 @@
       <a href="#modulos" class="floating-pill-card">
         <div class="floating-card-icon-area">
           <svg class="card-hero-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="32" r="26" stroke="#2C4035" stroke-width="1.8" stroke-dasharray="2 3" opacity="0.6"/>
-            <circle cx="32" cy="32" r="20" stroke="#C8A265" stroke-width="2"/>
-            <circle cx="32" cy="32" r="11" stroke="#2C4035" stroke-width="1.6"/>
-            <line x1="32" y1="6" x2="32" y2="12" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
-            <line x1="32" y1="52" x2="32" y2="58" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
-            <line x1="6" y1="32" x2="12" y2="32" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
-            <line x1="52" y1="32" x2="58" y2="32" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
-            <path d="M25 39 L32 32 L36 36 L44 24" stroke="#2C4035" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <polyline points="37 24 44 24 44 31" stroke="#2C4035" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="32" cy="32" r="3.2" fill="#C8A265"/>
+            <circle cx="32" cy="32" r="26" stroke="#23272C" stroke-width="1.8" stroke-dasharray="2 3" opacity="0.6"/>
+            <circle cx="32" cy="32" r="20" stroke="#B79A66" stroke-width="2"/>
+            <circle cx="32" cy="32" r="11" stroke="#23272C" stroke-width="1.6"/>
+            <line x1="32" y1="6" x2="32" y2="12" stroke="#B79A66" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="32" y1="52" x2="32" y2="58" stroke="#B79A66" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="6" y1="32" x2="12" y2="32" stroke="#B79A66" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="52" y1="32" x2="58" y2="32" stroke="#B79A66" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M25 39 L32 32 L36 36 L44 24" stroke="#23272C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="37 24 44 24 44 31" stroke="#23272C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="32" r="3.2" fill="#B79A66"/>
           </svg>
         </div>
         <h4 class="floating-card-title"><span class="card-step-num">1.</span> CAPTACIÓN<br>DIGITAL</h4>
@@ -2033,17 +2042,17 @@
       <a href="#modulos" class="floating-pill-card">
         <div class="floating-card-icon-area">
           <svg class="card-hero-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="14" y="10" width="36" height="5" rx="2.5" fill="#2C4035"/>
-            <path d="M16 15 L26 31 V46 H38 V31 L48 15" stroke="#2C4035" stroke-width="2" stroke-linejoin="round"/>
-            <line x1="21" y1="21" x2="43" y2="21" stroke="#C8A265" stroke-width="2" stroke-linecap="round"/>
-            <line x1="25" y1="28" x2="39" y2="28" stroke="#C8A265" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="32" cy="46" r="3.5" fill="#C8A265"/>
-            <line x1="32" y1="49" x2="32" y2="56" stroke="#C8A265" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="22" cy="56" r="3" stroke="#2C4035" stroke-width="1.8" fill="#FFFDF9"/>
-            <circle cx="32" cy="56" r="3" stroke="#2C4035" stroke-width="1.8" fill="#2C4035"/>
-            <circle cx="42" cy="56" r="3" stroke="#2C4035" stroke-width="1.8" fill="#FFFDF9"/>
-            <line x1="25" y1="56" x2="29" y2="56" stroke="#C8A265" stroke-width="1.8"/>
-            <line x1="35" y1="56" x2="39" y2="56" stroke="#C8A265" stroke-width="1.8"/>
+            <rect x="14" y="10" width="36" height="5" rx="2.5" fill="#23272C"/>
+            <path d="M16 15 L26 31 V46 H38 V31 L48 15" stroke="#23272C" stroke-width="2" stroke-linejoin="round"/>
+            <line x1="21" y1="21" x2="43" y2="21" stroke="#B79A66" stroke-width="2" stroke-linecap="round"/>
+            <line x1="25" y1="28" x2="39" y2="28" stroke="#B79A66" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="32" cy="46" r="3.5" fill="#B79A66"/>
+            <line x1="32" y1="49" x2="32" y2="56" stroke="#B79A66" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="22" cy="56" r="3" stroke="#23272C" stroke-width="1.8" fill="#FFFDF9"/>
+            <circle cx="32" cy="56" r="3" stroke="#23272C" stroke-width="1.8" fill="#23272C"/>
+            <circle cx="42" cy="56" r="3" stroke="#23272C" stroke-width="1.8" fill="#FFFDF9"/>
+            <line x1="25" y1="56" x2="29" y2="56" stroke="#B79A66" stroke-width="1.8"/>
+            <line x1="35" y1="56" x2="39" y2="56" stroke="#B79A66" stroke-width="1.8"/>
           </svg>
         </div>
         <h4 class="floating-card-title"><span class="card-step-num">2.</span> CRM &<br>AUTOMATIZACIÓN</h4>
@@ -2054,14 +2063,14 @@
         <div class="floating-card-icon-area">
           <svg class="card-hero-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <polygon points="32,7 39,18 52,18 43,28 47,41 35,35 32,37 29,35 17,41 21,28 12,18 25,18" 
-                     stroke="#C8A265" stroke-width="1.8" stroke-linejoin="round" fill="rgba(200, 162, 101, 0.08)"/>
-            <circle cx="32" cy="27" r="9" stroke="#2C4035" stroke-width="2" fill="#FFFFFF"/>
+                     stroke="#B79A66" stroke-width="1.8" stroke-linejoin="round" fill="rgba(183, 154, 102, 0.08)"/>
+            <circle cx="32" cy="27" r="9" stroke="#23272C" stroke-width="2" fill="#FFFFFF"/>
             <path d="M32 21 L33.8 25.2 L38 25.6 L34.8 28.5 L35.8 32.8 L32 30.5 L28.2 32.8 L29.2 28.5 L26 25.6 L30.2 25.2 Z" 
-                  fill="#C8A265"/>
-            <path d="M16 46 C18 52 24 57 32 57 C40 57 46 52 48 46" stroke="#2C4035" stroke-width="2" stroke-linecap="round"/>
-            <path d="M12 43 C14 47 17 50 21 52" stroke="#C8A265" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M52 43 C50 47 47 50 43 52" stroke="#C8A265" stroke-width="1.6" stroke-linecap="round"/>
-            <circle cx="32" cy="57" r="2" fill="#2C4035"/>
+                  fill="#B79A66"/>
+            <path d="M16 46 C18 52 24 57 32 57 C40 57 46 52 48 46" stroke="#23272C" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 43 C14 47 17 50 21 52" stroke="#B79A66" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M52 43 C50 47 47 50 43 52" stroke="#B79A66" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="32" cy="57" r="2" fill="#23272C"/>
           </svg>
         </div>
         <h4 class="floating-card-title"><span class="card-step-num">3.</span> MARCA &<br>AUTORIDAD</h4>
@@ -2071,18 +2080,18 @@
       <a href="#modulos" class="floating-pill-card">
         <div class="floating-card-icon-area">
           <svg class="card-hero-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="13" y="10" width="28" height="38" rx="3" stroke="#2C4035" stroke-width="2" fill="#FFFFFF"/>
-            <path d="M33 10 L41 18 H35 C33.9 18 33 17.1 33 16 V10 Z" fill="#2C4035"/>
-            <line x1="19" y1="20" x2="29" y2="20" stroke="#C8A265" stroke-width="1.8" stroke-linecap="round"/>
-            <line x1="19" y1="26" x2="35" y2="26" stroke="#C8A265" stroke-width="1.8" stroke-linecap="round"/>
-            <line x1="19" y1="32" x2="33" y2="32" stroke="#C8A265" stroke-width="1.8" stroke-linecap="round"/>
-            <line x1="19" y1="38" x2="27" y2="38" stroke="#C8A265" stroke-width="1.8" stroke-linecap="round"/>
+            <rect x="13" y="10" width="28" height="38" rx="3" stroke="#23272C" stroke-width="2" fill="#FFFFFF"/>
+            <path d="M33 10 L41 18 H35 C33.9 18 33 17.1 33 16 V10 Z" fill="#23272C"/>
+            <line x1="19" y1="20" x2="29" y2="20" stroke="#B79A66" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="19" y1="26" x2="35" y2="26" stroke="#B79A66" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="19" y1="32" x2="33" y2="32" stroke="#B79A66" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="19" y1="38" x2="27" y2="38" stroke="#B79A66" stroke-width="1.8" stroke-linecap="round"/>
             <g transform="translate(34, 26)">
-              <circle cx="13" cy="13" r="8" stroke="#2C4035" stroke-width="2" fill="#FFFDF9"/>
-              <circle cx="13" cy="13" r="3.2" fill="#C8A265"/>
-              <path d="M7 19 L-4 30" stroke="#2C4035" stroke-width="2.2" stroke-linecap="round"/>
-              <path d="M-1 27 L-3 25" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
-              <path d="M-4 30 L-6 28" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="13" cy="13" r="8" stroke="#23272C" stroke-width="2" fill="#FFFDF9"/>
+              <circle cx="13" cy="13" r="3.2" fill="#B79A66"/>
+              <path d="M7 19 L-4 30" stroke="#23272C" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M-1 27 L-3 25" stroke="#B79A66" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M-4 30 L-6 28" stroke="#B79A66" stroke-width="2.2" stroke-linecap="round"/>
             </g>
           </svg>
         </div>
