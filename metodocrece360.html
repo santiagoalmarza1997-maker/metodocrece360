@@ -7,13 +7,13 @@
   <meta name="description" content="El Método Crece 360® de Valdemar Burdman: Transforma tu carrera inmobiliaria en Miami. Equilibrio, Conocimiento, Marca y Acción para duplicar ventas y generar ingresos residuales.">
   
   <!-- Favicon con Logo Oficial -->
-  <link rel="icon" type="image/png" href="assets_crece360/logo_metodo_crece_360.png">
+  <link rel="icon" type="image/svg+xml" href="assets_crece360/logo.svg">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Método Crece 360® — Valdemar Burdman">
+  <meta property="og:title" content="Método Crece 360®">
   <meta property="og:description" content="Tu negocio inmobiliario SÍ puede ser predecible y rentable. Duplica tu producción y vive con equilibrio.">
-  <meta property="og:image" content="assets_crece360/logo_metodo_crece_360.png">
+  <meta property="og:image" content="assets_crece360/logo.svg">
   <meta property="og:url" content="https://metodocrece360.com">
 
   <!-- Google Fonts: Outfit (Luxury Modern Architecture Display), Plus Jakarta Sans & Cormorant Garamond -->
@@ -142,43 +142,27 @@
     .logo-container {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       text-decoration: none;
       flex-shrink: 0;
     }
 
-    .logo-symbol-mockup {
-      width: 38px;
-      height: 38px;
-      background: linear-gradient(135deg, #FAF6F0 0%, #DFCA9B 100%);
+    .site-header-logo {
+      height: 48px;
+      width: auto;
+      max-width: 170px;
+      object-fit: contain;
+      background: #FFFFFF;
+      padding: 3px 8px;
       border-radius: 9px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      box-shadow: 0 3px 12px rgba(32, 49, 38, 0.18);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: block;
     }
 
-    .logo-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.05;
-    }
-
-    .logo-title {
-      font-family: 'Outfit', sans-serif;
-      font-weight: 900;
-      font-size: 18px;
-      color: #FFFFFF;
-      letter-spacing: 0.04em;
-    }
-
-    .logo-subtitle {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 9px;
-      text-transform: uppercase;
-      letter-spacing: 1.6px;
-      color: #FFF3DA;
-      font-weight: 700;
+    .site-header-logo:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 6px 18px rgba(32, 49, 38, 0.25);
     }
 
     .nav-links {
@@ -1663,17 +1647,8 @@
   <header>
     <div class="container">
       <div class="nav-wrapper">
-        <a href="#" class="logo-container">
-          <div class="logo-symbol-mockup">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2C4035" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M3 3v18h18"/>
-              <path d="M18 9l-5 5-4-4-3 3"/>
-              <polyline points="14 9 18 9 18 13"/>
-            </svg>
-          </div>
-          <div class="logo-text">
-            <span class="logo-title">CRECE 360</span>
-          </div>
+        <a href="#hero" class="logo-container" title="Método Crece 360">
+          <img src="assets_crece360/logo.svg" alt="Método Crece 360 Logo" class="site-header-logo">
         </a>
 
         <ul class="nav-links">
@@ -2281,11 +2256,7 @@
       <div class="footer-columns-grid">
         <div class="footer-brand-bio">
           <div class="logo-container" style="margin-bottom: 14px;">
-            <img src="assets_crece360/logo_metodo_crece_360.png" alt="Método Crece 360 Logo" style="height: 48px; background: #fff; padding: 4px; border-radius: 8px;">
-            <div class="logo-text">
-              <span class="logo-title" style="color: #fff;">MÉTODO CRECE 360®</span>
-              <span class="logo-subtitle" style="color: var(--brand-coral);">SISTEMA DE ALTO RENDIMIENTO INMOBILIARIO</span>
-            </div>
+            <img src="assets_crece360/logo.svg" alt="Método Crece 360 Logo" style="height: 60px; width: auto; background: #FFFFFF; padding: 4px 8px; border-radius: 9px; box-shadow: 0 4px 15px rgba(0,0,0,0.25);">
           </div>
           <p>
             Guiando a agentes inmobiliarios a duplicar su producción, profesionalizar sus operaciones y generar verdadera riqueza residual sin sacrificar su vida personal.
