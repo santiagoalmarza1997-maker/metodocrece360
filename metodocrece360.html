@@ -2134,6 +2134,169 @@
       animation: slowRotateCompass 140s linear infinite reverse;
     }
 
+
+    /* PASARELA DE PAGO: MÉTODO CRECE 360® ($875 USD) */
+    .section-checkout-area {
+      padding: 80px 0 70px;
+      background: linear-gradient(180deg, #F8F9FB 0%, #F0F2F5 100%);
+      position: relative;
+      overflow: hidden;
+      border-top: 1.5px solid rgba(183, 154, 102, 0.28);
+      border-bottom: 1.5px solid rgba(183, 154, 102, 0.28);
+    }
+
+    .checkout-dual-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: stretch;
+      margin-top: 40px;
+    }
+
+    .crece360-checkout-card {
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 38px 32px;
+      box-shadow: 0 15px 45px rgba(21, 24, 29, 0.08);
+      border: 1.5px solid rgba(183, 154, 102, 0.35);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .checkout-gold-ribbon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #907240 0%, #B79A66 50%, #DEC38E 100%);
+    }
+
+    .checkout-qr-card {
+      background: linear-gradient(145deg, #16191E 0%, #22272E 100%);
+      color: #FFFFFF;
+      border-radius: 20px;
+      padding: 38px 30px;
+      box-shadow: 0 16px 45px rgba(21, 24, 29, 0.22);
+      border: 1.5px solid rgba(183, 154, 102, 0.45);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .qr-image-frame {
+      background: #FFFFFF;
+      padding: 14px;
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+      border: 2px solid #DEC38E;
+      margin: 16px 0 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .qr-image-frame:hover {
+      transform: scale(1.03);
+    }
+
+    .qr-image-img {
+      width: 170px;
+      height: 170px;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* HERO QUICK QR STRIP */
+    .hero-quick-qr-pill {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.5px solid rgba(183, 154, 102, 0.4);
+      border-radius: 14px;
+      padding: 10px 16px;
+      margin-top: 18px;
+      backdrop-filter: blur(8px);
+      transition: all 0.25s ease;
+    }
+
+    .hero-quick-qr-pill:hover {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: #B79A66;
+      box-shadow: 0 4px 18px rgba(183, 154, 102, 0.25);
+    }
+
+    .hero-quick-qr-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: #FFFFFF;
+      padding: 3px;
+      flex-shrink: 0;
+      border: 1px solid #B79A66;
+    }
+
+    .hero-quick-qr-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.2;
+    }
+
+    .hero-quick-qr-sub {
+      font-size: 11.5px;
+      color: #DEC38E;
+    }
+
+    .hero-quick-qr-btn {
+      margin-left: auto;
+      background: linear-gradient(135deg, #E2C07D 0%, #B79A66 100%);
+      color: #FFFFFF;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 7px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 10px rgba(183, 154, 102, 0.4);
+      white-space: nowrap;
+      transition: transform 0.2s ease;
+    }
+
+    .hero-quick-qr-btn:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 900px) {
+      .checkout-dual-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .crece360-checkout-card, .checkout-qr-card {
+        padding: 30px 20px;
+      }
+      .hero-quick-qr-pill {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .hero-quick-qr-btn {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -2161,7 +2324,7 @@
         </ul>
 
         <div>
-          <a href="#aplicar-hero" class="btn-mockup-coral">¡ACCEDE AHORA!</a>
+          <a href="#checkout" class="btn-mockup-coral">¡ACCEDE AHORA!</a>
         </div>
       </div>
     </div>
@@ -2241,6 +2404,14 @@
             <span class="hero-proof-tag">🧭 Los 4 Pilares Oficiales</span>
             <span class="hero-proof-tag">⭐ Valdemar Burdman (+20 Años)</span>
             <span class="hero-proof-tag">📍 Miami, FL</span>
+          </div>
+          <div class="hero-quick-qr-pill">
+            <img src="assets_crece360/qr_pago_stripe.png" alt="QR Pago Stripe" class="hero-quick-qr-img">
+            <div>
+              <div class="hero-quick-qr-title">Inscripción Directa ($875 USD)</div>
+              <div class="hero-quick-qr-sub">Escanea o haz clic para pagar vía Stripe</div>
+            </div>
+            <a href="#checkout" class="hero-quick-qr-btn">PAGAR CON QR / STRIPE →</a>
           </div>
         </div>
 
@@ -2587,7 +2758,135 @@
   <!-- 10. TESTIMONIOS Y CASOS DE ÉXITO -->
   
 
-  <!-- 11. PREGUNTAS FRECUENTES (ACORDEÓN) -->
+  <!-- SECCIÓN PASARELA DE PAGO OFICIAL: MÉTODO CRECE 360® ($875 USD) -->
+  <section class="section-checkout-area" id="checkout">
+    <div class="container">
+      <div class="section-center-header">
+        <span class="section-kicker">Inversión & Acceso Inmediato</span>
+        <h2 class="section-headline">Inscríbete al Método Crece 360®</h2>
+        <p class="section-subheadline">
+          Mentoría privada, metodología de los 4 pilares y acceso a la comunidad con Valdemar Burdman.
+        </p>
+      </div>
+
+      <div class="checkout-dual-grid">
+        <!-- Columna 1: Tarjeta Oficial de Pago ($875 USD) -->
+        <div class="crece360-checkout-card">
+          <!-- Cinta Superior Dorada -->
+          <div class="checkout-gold-ribbon"></div>
+
+          <div>
+            <!-- Logo Oficial -->
+            <div style="margin-bottom: 18px; display: flex; justify-content: center;">
+              <img src="assets_crece360/logo_nav.png" alt="Método Crece 360®" style="height: 64px; width: auto; object-fit: contain;">
+            </div>
+
+            <span style="font-size: 11px; font-weight: 800; letter-spacing: 2.2px; text-transform: uppercase; color: #B79A66; display: block; margin-bottom: 6px;">
+              PROGRAMA DE ACELERACIÓN INMOBILIARIA
+            </span>
+
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 26px; font-weight: 900; color: #15181D; margin: 0 0 8px 0;">
+              Método Crece 360®
+            </h3>
+
+            <p style="font-size: 13.5px; color: #64748B; margin: 0 0 20px 0; line-height: 1.5;">
+              Mentoría privada y sistema probado de 4 pilares con <strong>Valdemar Burdman</strong> para realtors en Florida.
+            </p>
+
+            <!-- Precio Destacado -->
+            <div style="background: #F8F9FB; border-radius: 14px; padding: 18px 20px; margin-bottom: 22px; border: 1.5px solid #E2E6EC;">
+              <div style="font-size: 11.5px; font-weight: 700; color: #757B86; text-transform: uppercase; letter-spacing: 1px;">Inversión Total</div>
+              <div style="font-family: 'Outfit', sans-serif; font-size: 44px; font-weight: 900; color: #15181D; line-height: 1.1; margin: 4px 0;">
+                <span style="font-size: 24px; vertical-align: top; color: #B79A66; font-weight: 800;">$</span>875 <span style="font-size: 15px; font-weight: 700; color: #64748B;">USD</span>
+              </div>
+              <div style="font-size: 12.5px; color: #059669; font-weight: 800;">✔ Acceso Completo e Inmediato</div>
+            </div>
+
+            <!-- Lo que Incluye (Checklist de Valor) -->
+            <div style="text-align: left; margin-bottom: 24px; font-size: 13px; color: #334155; line-height: 1.8;">
+              <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 6px;">
+                <span style="color: #B79A66; font-weight: bold; font-size: 15px;">✔</span>
+                <span><strong>Los 4 Pilares:</strong> Equilibrio, Conocimiento, Marca y Acción</span>
+              </div>
+              <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 6px;">
+                <span style="color: #B79A66; font-weight: bold; font-size: 15px;">✔</span>
+                <span><strong>Comunidad Exclusiva:</strong> Acceso a grabaciones y sesiones semanales</span>
+              </div>
+              <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 6px;">
+                <span style="color: #B79A66; font-weight: bold; font-size: 15px;">✔</span>
+                <span><strong>Herramientas Tácticas:</strong> Estrategias de captación de inversionistas</span>
+              </div>
+              <div style="display: flex; gap: 8px; align-items: center;">
+                <span style="color: #B79A66; font-weight: bold; font-size: 15px;">✔</span>
+                <span><strong>Mentoría Directa:</strong> Acompañamiento en contratos con Valdemar</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!-- Botón de Pago Oficial Stripe con Resplandor Dorado -->
+            <a href="javascript:void(0)" onclick="iniciarPagoCrece360()" class="btn-hero-submit" style="height: 52px; font-size: 15px; text-decoration: none; border-radius: 12px; margin-bottom: 12px;">
+              <span>🔒 INSCRIBIRME AL MÉTODO ($875 USD)</span>
+            </a>
+
+            <!-- Sellos de Seguridad Stripe & Tarjetas -->
+            <div style="font-size: 11.5px; color: #757B86; display: flex; flex-direction: column; gap: 4px; align-items: center;">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span>⚡ Pago 100% Seguro vía <strong>Stripe</strong></span>
+                <span>•</span>
+                <span>Cifrado SSL 256-Bit</span>
+              </div>
+              <div style="font-size: 11px; color: #94A3B8;">
+                Tarjetas Internacionales (Visa, Mastercard, Amex, Apple Pay)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 2: Pago Rápido con Código QR -->
+        <div class="checkout-qr-card">
+          <div class="checkout-gold-ribbon"></div>
+
+          <div>
+            <span class="team-ecosystem-badge" style="margin-bottom: 10px;">PAGO RÁPIDO DESDE TU MÓVIL</span>
+            <h3 style="font-family: 'Outfit', sans-serif; font-size: 22px; font-weight: 800; color: #FFFFFF; margin-bottom: 6px;">
+              Escanea y Paga en 60s
+            </h3>
+            <p style="font-size: 13px; color: #A5B0BD; line-height: 1.5; max-width: 280px; margin: 0 auto 12px;">
+              Apunta la cámara de tu celular para abrir el checkout seguro de Stripe al instante.
+            </p>
+
+            <!-- Frame del Código QR con Emblema -->
+            <div class="qr-image-frame">
+              <img src="assets_crece360/qr_pago_stripe.png" alt="Código QR Pago Stripe Método Crece 360" class="qr-image-img">
+            </div>
+
+            <!-- Pasos Rápidos -->
+            <div style="text-align: left; font-size: 12.5px; color: #D6DCE5; line-height: 1.6; max-width: 280px; margin: 0 auto;">
+              <div style="display: flex; gap: 8px; margin-bottom: 4px;">
+                <span style="color: #DEC38E; font-weight: bold;">1.</span> Abre la cámara de tu teléfono
+              </div>
+              <div style="display: flex; gap: 8px; margin-bottom: 4px;">
+                <span style="color: #DEC38E; font-weight: bold;">2.</span> Escanea el código QR central
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <span style="color: #DEC38E; font-weight: bold;">3.</span> Paga con Apple Pay o Tarjeta
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 18px; width: 100%;">
+            <a href="javascript:void(0)" onclick="iniciarPagoCrece360()" class="btn-mockup-coral" style="width: 100%; height: 46px; font-size: 13px;">
+              <span>ABRIR CHECKOUT EN LÍNEA →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- 11. PREGUNTAS FRECUENTES (ACORDEÓN) -->
   <section class="section-faq-wrap" id="faq">
     <div class="container">
       <div class="section-center-header">
@@ -2933,6 +3232,15 @@
         submitBtn.innerText = '🚀 Enviar Solicitud & Agendar Evaluación 1-a-1';
       }, 500);
     }
-  </script>
+  
+  // Pasarela de Pago Stripe Oficial
+  function iniciarPagoCrece360() {
+    // Si hay un modal o link directo de Stripe:
+    alert("Iniciando conexión segura con Stripe Checkout ($875 USD)...\n\nRedirigiendo a la pasarela cifrada SSL 256-Bit para completar tu inscripción al Método Crece 360®.");
+    // Aquí puedes vincular tu enlace de pago oficial de Stripe (Payment Link):
+    // window.open('https://buy.stripe.com/TU_LINK_DE_STRIPE', '_blank');
+  }
+
+</script>
 </body>
 </html>
