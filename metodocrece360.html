@@ -243,18 +243,18 @@
 
     .hero-mockup-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 24px;
-      align-items: flex-end;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 36px;
+      align-items: center;
       position: relative;
       z-index: 3;
     }
 
     .hero-mockup-headline {
       font-family: 'Outfit', sans-serif;
-      font-size: clamp(30px, 3.6vw, 50px);
+      font-size: clamp(28px, 3.4vw, 46px);
       font-weight: 900;
-      line-height: 1.08;
+      line-height: 1.12;
       text-transform: uppercase;
       letter-spacing: -0.01em;
       margin-bottom: 14px;
@@ -270,8 +270,8 @@
       font-size: 14.5px;
       color: #E2EBE5;
       line-height: 1.5;
-      max-width: 500px;
-      margin-bottom: 22px;
+      max-width: 530px;
+      margin-bottom: 18px;
       font-weight: 400;
     }
 
@@ -280,101 +280,329 @@
       font-weight: 700;
     }
 
-    .hero-mockup-buttons {
+    /* Checklist bullets in Hero Left */
+    .hero-feature-checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
       display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 10px;
     }
 
-    .btn-mockup-hero-coral {
+    .hero-feature-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 13.5px;
+      color: #E2EBE5;
+      line-height: 1.4;
+    }
+
+    .hero-check-icon {
+      width: 20px;
+      height: 20px;
+      background: #DEC38E;
+      color: #213529;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 900;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .hero-feature-checklist li strong {
+      color: #FFFFFF;
+    }
+
+    .hero-proof-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 6px;
+    }
+
+    .hero-proof-tag {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #DEC38E;
+      background: rgba(222, 195, 142, 0.12);
+      border: 1px solid rgba(222, 195, 142, 0.28);
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+    }
+
+    /* HERO APPLICATION FORM CARD (HIGH CONVERTING B2B ARCHITECTURE) */
+    .hero-form-card {
+      background: linear-gradient(145deg, #FFFFFF 0%, #FAF6F0 100%);
+      border: 1.5px solid #DEC38E;
+      border-radius: 20px;
+      padding: 24px 22px 20px;
+      box-shadow: 0 16px 40px rgba(18, 30, 23, 0.35), 0 0 0 1px rgba(255,255,255,0.9) inset;
+      position: relative;
+      z-index: 10;
+      color: var(--text-dark);
+    }
+
+    .hero-form-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(200, 162, 101, 0.15);
+      color: #9A6F2A;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(200, 162, 101, 0.35);
+      margin-bottom: 8px;
+    }
+
+    .hero-form-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+      color: #1E2922;
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .hero-form-subtitle {
+      font-size: 12.5px;
+      color: #5D6D62;
+      line-height: 1.4;
+      margin-bottom: 14px;
+    }
+
+    .hero-form-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .hero-input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      text-align: left;
+    }
+
+    .hero-input-label {
+      font-size: 11px;
+      font-weight: 800;
+      color: #2C4035;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .hero-form-input, .hero-form-select {
+      width: 100%;
+      height: 38px;
+      padding: 7px 12px;
+      border-radius: 8px;
+      border: 1.2px solid #D6C8B4;
+      background: #FFFFFF;
+      font-size: 13px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1E2922;
+      transition: all 0.25s ease;
+      outline: none;
+    }
+
+    .hero-form-input:focus, .hero-form-select:focus {
+      border-color: #C8A265;
+      box-shadow: 0 0 0 3px rgba(200, 162, 101, 0.2);
+    }
+
+    .btn-hero-submit {
+      width: 100%;
+      height: 46px;
       background: linear-gradient(135deg, #E66548 0%, #D45437 100%);
       color: #FFFFFF;
       font-family: 'Outfit', sans-serif;
       font-size: 13.5px;
       font-weight: 800;
-      letter-spacing: 0.8px;
+      letter-spacing: 0.6px;
       text-transform: uppercase;
-      padding: 13px 30px;
-      border-radius: var(--radius-sm);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      text-decoration: none;
-      box-shadow: 0 8px 24px rgba(212, 84, 55, 0.45);
-      transition: var(--transition);
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      border: none;
+      border-radius: 10px;
       cursor: pointer;
-    }
-
-    .btn-mockup-hero-coral:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(212, 84, 55, 0.6);
-      filter: brightness(1.08);
-    }
-
-    .btn-mockup-hero-gold {
-      background: linear-gradient(135deg, #C7A46B 0%, #B69155 100%);
-      color: #FFFFFF;
-      font-family: 'Outfit', sans-serif;
-      font-size: 13.5px;
-      font-weight: 800;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      padding: 13px 30px;
-      border-radius: var(--radius-sm);
-      border: 1px solid rgba(255, 255, 255, 0.35);
-      text-decoration: none;
-      box-shadow: 0 8px 22px rgba(182, 145, 85, 0.4);
-      transition: var(--transition);
-      display: inline-flex;
+      box-shadow: 0 8px 22px rgba(212, 84, 55, 0.45);
+      transition: all 0.28s ease;
+      display: flex;
       align-items: center;
+      justify-content: center;
       gap: 8px;
-      cursor: pointer;
+      margin-top: 4px;
     }
 
-    .btn-mockup-hero-gold:hover {
+    .btn-hero-submit:hover {
+      background: linear-gradient(135deg, #EE7357 0%, #DF593A 100%);
       transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(182, 145, 85, 0.55);
-      filter: brightness(1.08);
+      box-shadow: 0 12px 28px rgba(212, 84, 55, 0.6);
     }
 
-    /* Composición de los Mentores (Más grandes, integrados y por encima de las tarjetas) */
-    .hero-mockup-team-wrap {
+    .hero-form-security {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-size: 11px;
+      color: #728277;
+      margin-top: 8px;
+      font-weight: 500;
+    }
+
+
+    /* SECCIÓN RED DE MENTORES & COMUNIDAD DE APOYO */
+    .section-team-ecosystem {
+      padding: 72px 0 64px;
+      background: linear-gradient(180deg, #FBF8F3 0%, #F5EDE2 100%);
+      position: relative;
+      overflow: hidden;
+      border-top: 1px solid rgba(200, 162, 101, 0.22);
+      border-bottom: 1px solid rgba(200, 162, 101, 0.22);
+    }
+
+    .team-ecosystem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .team-ecosystem-visual {
       position: relative;
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      z-index: 25; /* Quedan por encima del nivel de las tarjetas */
-      margin-bottom: -54px; /* Extiende su base sobre el corte superior de las tarjetas */
-      pointer-events: none;
     }
 
-    .hero-mockup-team-img {
-      width: 100%;
-      max-width: 510px; /* Tamaño imponente y protagonista */
-      height: auto;
-      display: block;
-      filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.45));
-      border: none !important;
-      border-radius: 0 !important;
-      box-shadow: none !important;
-      background: transparent !important;
-      transition: transform 0.4s ease;
+    .team-ecosystem-visual::before {
+      content: '';
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      bottom: 0;
+      border-radius: 28px;
+      background: linear-gradient(145deg, rgba(37, 56, 44, 0.07) 0%, rgba(200, 162, 101, 0.18) 100%);
+      z-index: 1;
+      border: 1px solid rgba(200, 162, 101, 0.25);
+    }
+
+    .team-ecosystem-img {
       position: relative;
-      z-index: 25;
+      z-index: 2;
+      width: 100%;
+      max-width: 520px;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 18px 30px rgba(18, 30, 23, 0.22));
     }
 
-    .hero-mockup-team-img:hover {
-      transform: translateY(-4px) scale(1.01);
+    .team-ecosystem-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .team-ecosystem-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(200, 162, 101, 0.15);
+      color: #9A6F2A;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      padding: 5px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(200, 162, 101, 0.35);
+      margin-bottom: 12px;
+    }
+
+    .team-ecosystem-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 3.2vw, 40px);
+      font-weight: 800;
+      color: #213529;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .team-ecosystem-desc {
+      font-size: 15px;
+      color: #4A5B50;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .team-benefits-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .team-benefit-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: #FFFFFF;
+      border: 1px solid rgba(200, 162, 101, 0.25);
+      border-radius: 14px;
+      padding: 15px 18px;
+      box-shadow: 0 4px 14px rgba(33, 53, 41, 0.04);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .team-benefit-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(33, 53, 41, 0.08);
+      border-color: #C8A265;
+    }
+
+    .team-benefit-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(200, 162, 101, 0.15);
+      color: #9A6F2A;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .team-benefit-text h5 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #213529;
+      margin-bottom: 3px;
+    }
+
+    .team-benefit-text p {
+      font-size: 13px;
+      color: #617367;
+      line-height: 1.45;
+      margin: 0;
     }
 
     /* 4 TARJETAS FLOTANTES DEL MOCKUP (VISIBLES INMEDIATAMENTE AL ABRIR) */
     .floating-cards-row-wrap {
       position: relative;
-      margin-top: -48px;
+      margin-top: 30px;
       z-index: 20;
-      margin-bottom: 55px;
+      margin-bottom: 50px;
     }
 
     /* Soft organic halo glow behind the first card on the left */
@@ -1560,7 +1788,7 @@
       .modules-cards-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-      .hero-grid, .mentor-story-grid, .calc-box-wrap {
+      .hero-grid, .hero-mockup-grid, .mentor-story-grid, .calc-box-wrap, .team-ecosystem-grid {
         grid-template-columns: 1fr;
       }
       .paths-grid, .pillars-4-grid {
@@ -1660,7 +1888,7 @@
         </ul>
 
         <div>
-          <a href="#aplicar" class="btn-mockup-coral">¡ACCEDE AHORA!</a>
+          <a href="#aplicar-hero" class="btn-mockup-coral">¡ACCEDE AHORA!</a>
         </div>
       </div>
     </div>
@@ -1684,26 +1912,96 @@
 
     <div class="container">
       <div class="hero-mockup-grid">
-        <!-- Columna Izquierda: Headline & CTAs -->
+        <!-- Columna Izquierda: Propuesta de Valor, Beneficios y Prueba Social -->
         <div>
+          <div class="hero-form-badge" style="margin-bottom: 12px; background: rgba(222, 195, 142, 0.15); color: #DEC38E; border-color: rgba(222, 195, 142, 0.35);">PROGRAMA EXCLUSIVO PARA AGENTES EN FLORIDA</div>
           <h1 class="hero-mockup-headline">
-            ELEVACIÓN PROFESIONAL:<br>
-            EL MÉTODO <span class="hero-mockup-gold-word">CRECE 360</span>.
+            DUPLICA TU PRODUCCIÓN INMOBILIARIA.<br>
+            EL MÉTODO <span class="hero-mockup-gold-word">CRECE 360®</span>.
           </h1>
 
           <p class="hero-mockup-description">
-            Una nueva era para el agente inmobiliario digital. Transforma tu carrera con nuestro sistema integral de capacitación y mentoría. <strong>¡Alcanza el éxito 360°!</strong>
+            El sistema integral y predecible para agentes de bienes raíces en el sur de la Florida: 
+            <strong>captación de inversionistas calificados, automatización de embudos y mentoría táctica 1-a-1.</strong>
           </p>
 
-          <div class="hero-mockup-buttons">
-            <a href="#aplicar" class="btn-mockup-hero-coral">¡ACCEDE AHORA!</a>
-            <a href="#modulos" class="btn-mockup-hero-gold">EXPLORAR MÓDULOS</a>
+          <ul class="hero-feature-checklist">
+            <li>
+              <span class="hero-check-icon">✓</span>
+              <div><strong>Captación Inbound Calificada:</strong> Inversionistas nacionales y extranjeros sin llamadas en frío ni desgaste.</div>
+            </li>
+            <li>
+              <span class="hero-check-icon">✓</span>
+              <div><strong>Infraestructura & CRM Automatizado:</strong> Embudos digitales para seguimiento 24/7 sin perder prospectos.</div>
+            </li>
+            <li>
+              <span class="hero-check-icon">✓</span>
+              <div><strong>Mentoría Directa en Negociación:</strong> Cierre conjunto de contratos y transacciones de alta comisión.</div>
+            </li>
+          </ul>
+
+          <div class="hero-proof-bar">
+            <span class="hero-proof-tag">🏆 eXp Realty Partner</span>
+            <span class="hero-proof-tag">⭐ +$50M en Volumen Asesorado</span>
+            <span class="hero-proof-tag">📍 Miami, FL</span>
           </div>
         </div>
 
-        <!-- Columna Derecha: Fotografía de Equipo Integrada Orgánica (Sin Tarjeta) -->
-        <div class="hero-mockup-team-wrap">
-          <img src="assets_crece360/hero_team_cutout_transparent.png" alt="Equipo de Mentores Método Crece 360" class="hero-mockup-team-img">
+        <!-- Columna Derecha: Formulario de Postulación de Alta Conversión Inmediato -->
+        <div class="hero-form-card" id="aplicar-hero">
+          <div class="hero-form-badge">EVALUACIÓN PRIVADA 1-A-1</div>
+          <h3 class="hero-form-title">Aplica al Método Crece 360®</h3>
+          <p class="hero-form-subtitle">Cupos limitados por trimestre para agentes comprometidos en Florida.</p>
+          
+          <form id="heroLeadForm" onsubmit="handleLeadSubmit(event)">
+            <div class="hero-form-fields">
+              <div class="hero-input-group">
+                <label class="hero-input-label" for="hero_name">Nombre y Apellido *</label>
+                <input type="text" id="hero_name" name="full_name" class="hero-form-input" placeholder="Ej. Carlos Mendoza" required>
+              </div>
+
+              <div class="hero-input-group">
+                <label class="hero-input-label" for="hero_phone">Teléfono / WhatsApp *</label>
+                <input type="tel" id="hero_phone" name="phone" class="hero-form-input" placeholder="+1 (786) 000-0000" required>
+              </div>
+
+              <div class="hero-input-group">
+                <label class="hero-input-label" for="hero_email">Correo Electrónico *</label>
+                <input type="email" id="hero_email" name="email" class="hero-form-input" placeholder="carlos@gmail.com" required>
+              </div>
+
+              <div class="hero-input-group">
+                <label class="hero-input-label" for="hero_exp">Licencia en Florida *</label>
+                <select id="hero_exp" name="experience" class="hero-form-select" required>
+                  <option value="">Selecciona tu estado de licencia...</option>
+                  <option value="activa">Licencia Activa en Florida</option>
+                  <option value="en_tramite">Licencia en Trámite</option>
+                  <option value="otro_estado">Licencia en Otro Estado / País</option>
+                </select>
+              </div>
+
+              <div class="hero-input-group">
+                <label class="hero-input-label" for="hero_production">Producción Anual Actual *</label>
+                <select id="hero_production" name="annual_production" class="hero-form-select" required>
+                  <option value="">Rango de transacciones cerradas...</option>
+                  <option value="0_a_2">0 a 2 cierres / año (Iniciando)</option>
+                  <option value="3_a_7">3 a 7 cierres / año (En crecimiento)</option>
+                  <option value="8_a_15">8 a 15 cierres / año (Consolidado)</option>
+                  <option value="mas_16">+16 cierres / año (Top Producer)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn-hero-submit">
+                <span>SOLICITAR EVALUACIÓN ESTRATÉGICA</span>
+                <span>→</span>
+              </button>
+              
+              <div class="hero-form-security">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                <span>100% Confidencial • Revisión directa por el equipo de mentores</span>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -1794,8 +2092,62 @@
   </div>
 
 
-  <!-- 4. SECCIÓN "MÓDULOS DESTACADOS" (DEL MOCKUP) -->
-  <section class="section-modules-featured" id="modulos">
+  <!-- 4. SECCIÓN: RED DE MENTORES Y ECOSISTEMA DE RESPALDO -->
+  <section class="section-team-ecosystem" id="mentores">
+    <div class="container">
+      <div class="team-ecosystem-grid">
+        <!-- Visual: Los 3 Realtors Integrados con Estilo de Respaldo -->
+        <div class="team-ecosystem-visual">
+          <img src="assets_crece360/hero_team_cutout_transparent.png" alt="Equipo de Especialistas Método Crece 360" class="team-ecosystem-img">
+        </div>
+
+        <!-- Contenido y Beneficios de Trabajar con el Ecosistema -->
+        <div class="team-ecosystem-content">
+          <span class="team-ecosystem-badge">Ecosistema de Acompañamiento 360°</span>
+          <h2 class="team-ecosystem-title">No Estás Solo: Una Red de Especialistas que Respalda Cada Cierre</h2>
+          <p class="team-ecosystem-desc">
+            En el mercado inmobiliario actual, los agentes solitarios se saturan con tareas operativas y pierden clientes por falta de estructura. En el <strong>Método Crece 360®</strong>, cuentas con el respaldo directo de un equipo multidisciplinario con trayectoria comprobada en Florida.
+          </p>
+
+          <div class="team-benefits-list">
+            <div class="team-benefit-card">
+              <div class="team-benefit-icon">🏢</div>
+              <div class="team-benefit-text">
+                <h5>Mesa de Negociación y Cierres Complejos</h5>
+                <p>Acompañamiento en la estructuración de ofertas y negociación con inversionistas internacionales para asegurar contratos de alto valor.</p>
+              </div>
+            </div>
+
+            <div class="team-benefit-card">
+              <div class="team-benefit-icon">⚖️</div>
+              <div class="team-benefit-text">
+                <h5>Respaldo Legal, Tributario y Financiero</h5>
+                <p>Conexión directa con abogados de bienes raíces, contadores CPA y prestamistas hipotecarios bilingües para tus clientes extranjeros.</p>
+              </div>
+            </div>
+
+            <div class="team-benefit-card">
+              <div class="team-benefit-icon">📈</div>
+              <div class="team-benefit-text">
+                <h5>Cultura de Alto Rendimiento sin Techo</h5>
+                <p>Sinergia semanal con agentes activos que comparten estrategias probadas de pauta digital, captación orgánica y revenue share.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="#aplicar-hero" class="btn-mockup-coral" style="display: inline-flex; align-items: center; gap: 8px;">
+              <span>ÚNETE AL EQUIPO CRECE 360</span>
+              <span>→</span>
+            </a>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- 5. SECCIÓN "MÓDULOS DESTACADOS" (DEL MOCKUP) -->
+   <section class="section-modules-featured" id="modulos">
     <div class="container">
       <h2 class="modules-section-title">MÓDULOS DESTACADOS</h2>
 
