@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Método Crece 360® | Valdemar Burdman — Mentoría & Crecimiento para Agentes Inmobiliarios en Miami</title>
+  <meta name="description" content="El Método Crece 360® de Valdemar Burdman: Transforma tu carrera inmobiliaria en Miami. Equilibrio, Conocimiento, Marca y Acción para duplicar ventas y generar ingresos residuales.">
+  
+  <!-- Favicon con Logo Oficial -->
+  <link rel="icon" type="image/png" href="assets_crece360/logo_metodo_crece_360.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Método Crece 360® — Valdemar Burdman">
+  <meta property="og:description" content="Tu negocio inmobiliario SÍ puede ser predecible y rentable. Duplica tu producción y vive con equilibrio.">
+  <meta property="og:image" content="assets_crece360/logo_metodo_crece_360.png">
+  <meta property="og:url" content="https://metodocrece360.com">
+
+  <!-- Google Fonts: Outfit (Luxury Modern Architecture Display), Plus Jakarta Sans & Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,600&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* PALETA OFICIAL MOCKUP CRECE 360 (Forest Green, Warm Sand/Champagne, Vibrant Coral & Soft Gold) */
+      --bg-body: #FAF6F0; /* Arena / Marfil cálido del mockup */
+      --bg-subtle: #F3ECE2; /* Champán suave */
+      --bg-warm: #EADFCF; /* Arena más contrastada */
+      --bg-card: #FFFFFF; /* Tarjetas blancas limpias */
+      --bg-card-elevated: #FFFDF9;
+      
+      --forest-dark: #203126; /* Verde bosque ultra profundo */
+      --forest-main: #2C4035; /* Verde bosque principal del Hero */
+      --forest-light: #3A5345; /* Verde bosque acento */
+      
+      --header-gold: #C6A266; /* Barra superior dorada suave del mockup */
+      --header-gold-light: #DFCA9B;
+      
+      --text-dark: #1E2922; /* Carbón oscuro con matiz forestal */
+      --text-body: #3D4A41; /* Grafito suave */
+      --text-muted: #6B7B71; /* Gris verdoso atenuado */
+      --text-light: #94A399;
+      
+      --brand-primary: #C8A265; /* Oro champán satinado */
+      --brand-coral: #E06D53; /* Coral terracota oficial de botones del mockup */
+      --brand-coral-hover: #C9563C;
+      --brand-gold-btn: #C5A168; /* Botón secundario dorado del mockup */
+      --brand-gold-hover: #AF8B51;
+      
+      --border-light: rgba(44, 64, 53, 0.08);
+      --border-warm: rgba(200, 162, 101, 0.3);
+      --border-champagne: #E4D7C5;
+      
+      --shadow-sm: 0 2px 10px rgba(32, 49, 38, 0.04);
+      --shadow-md: 0 10px 30px rgba(32, 49, 38, 0.08);
+      --shadow-lg: 0 20px 50px rgba(32, 49, 38, 0.12);
+      --shadow-coral: 0 8px 24px rgba(224, 109, 83, 0.35);
+      
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+      --radius-pill: 9999px;
+      
+      --transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-body);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.68;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, .font-heading {
+      font-family: 'Playfair Display', serif;
+      color: var(--text-dark);
+      letter-spacing: -0.015em;
+      font-weight: 700;
+    }
+
+    /* LEON HOME ULTRA-LUXURY EDITORIAL HERO HEADLINE */
+    .hero-leon-home-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(38px, 5.5vw, 76px);
+      font-weight: 800;
+      line-height: 1.06;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 24px;
+    }
+
+    .hero-leon-home-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(20px, 2.2vw, 28px);
+      font-style: italic;
+      color: var(--brand-coral);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      margin-bottom: 22px;
+      display: block;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+
+
+    /* HEADER & NAVIGATION (MOCKUP GOLD/CHAMPAGNE TOP BAR) */
+    header {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background: linear-gradient(90deg, #BA975E 0%, #CDAB73 50%, #B8945B 100%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 18px rgba(32, 49, 38, 0.15);
+      transition: var(--transition);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      gap: 20px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .logo-symbol-mockup {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, #FAF6F0 0%, #DFCA9B 100%);
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .logo-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 18px;
+      color: #FFFFFF;
+      letter-spacing: 0.04em;
+    }
+
+    .logo-subtitle {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      color: #FFF3DA;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(14px, 2vw, 28px);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      white-space: nowrap;
+    }
+
+    .nav-links a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      transition: var(--transition);
+      display: inline-block;
+      padding: 4px 0;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: #FFF0D0;
+      transform: translateY(-1px);
+    }
+
+    .btn-mockup-coral {
+      background: linear-gradient(135deg, #E66548 0%, #D45437 100%);
+      color: #FFFFFF;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 9px 22px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      text-decoration: none;
+      box-shadow: 0 4px 15px rgba(212, 84, 55, 0.4);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .btn-mockup-coral:hover {
+      background: linear-gradient(135deg, #EE7357 0%, #DF593A 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(212, 84, 55, 0.55);
+    }
+
+    /* HERO SECTION CON CONTRASTE DE DOS COLORES (CURVA VERDE BOSQUE & FONDO ARENA) */
+    .hero-mockup-section {
+      background-color: #FAF6F0;
+      color: #FFFFFF;
+      position: relative;
+      padding: 32px 0 54px;
+      overflow: hidden;
+    }
+
+    /* Fondo vectorial con curva orgánica verde bosque que contrasta con el arena */
+    .hero-curved-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-mockup-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+      align-items: flex-end;
+      position: relative;
+      z-index: 3;
+    }
+
+    .hero-mockup-headline {
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(30px, 3.6vw, 50px);
+      font-weight: 900;
+      line-height: 1.08;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+      color: #FFFFFF;
+    }
+
+    .hero-mockup-gold-word {
+      color: #DEC38E;
+      text-shadow: 0 2px 14px rgba(222, 195, 142, 0.35);
+    }
+
+    .hero-mockup-description {
+      font-size: 14.5px;
+      color: #E2EBE5;
+      line-height: 1.5;
+      max-width: 500px;
+      margin-bottom: 22px;
+      font-weight: 400;
+    }
+
+    .hero-mockup-description strong {
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .hero-mockup-buttons {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-mockup-hero-coral {
+      background: linear-gradient(135deg, #E66548 0%, #D45437 100%);
+      color: #FFFFFF;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 13px 30px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(212, 84, 55, 0.45);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .btn-mockup-hero-coral:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(212, 84, 55, 0.6);
+      filter: brightness(1.08);
+    }
+
+    .btn-mockup-hero-gold {
+      background: linear-gradient(135deg, #C7A46B 0%, #B69155 100%);
+      color: #FFFFFF;
+      font-family: 'Outfit', sans-serif;
+      font-size: 13.5px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 13px 30px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      text-decoration: none;
+      box-shadow: 0 8px 22px rgba(182, 145, 85, 0.4);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .btn-mockup-hero-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(182, 145, 85, 0.55);
+      filter: brightness(1.08);
+    }
+
+    /* Composición de los Mentores (Más grandes, integrados y por encima de las tarjetas) */
+    .hero-mockup-team-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      z-index: 25; /* Quedan por encima del nivel de las tarjetas */
+      margin-bottom: -54px; /* Extiende su base sobre el corte superior de las tarjetas */
+      pointer-events: none;
+    }
+
+    .hero-mockup-team-img {
+      width: 100%;
+      max-width: 510px; /* Tamaño imponente y protagonista */
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.45));
+      border: none !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      background: transparent !important;
+      transition: transform 0.4s ease;
+      position: relative;
+      z-index: 25;
+    }
+
+    .hero-mockup-team-img:hover {
+      transform: translateY(-4px) scale(1.01);
+    }
+
+    /* 4 TARJETAS FLOTANTES DEL MOCKUP (VISIBLES INMEDIATAMENTE AL ABRIR) */
+    .floating-cards-row-wrap {
+      position: relative;
+      margin-top: -48px;
+      z-index: 20;
+      margin-bottom: 55px;
+    }
+
+    /* Soft organic halo glow behind the first card on the left */
+    .floating-cards-row-wrap::before {
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: -30px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(65, 94, 77, 0.28) 0%, rgba(65, 94, 77, 0) 70%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .floating-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .floating-pill-card {
+      background: linear-gradient(145deg, #FFFDF9 0%, #F5ECE0 100%);
+      border: 1.5px solid #DFC9A3;
+      border-radius: 18px;
+      padding: 12px 14px 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(32, 49, 38, 0.08), inset 0 1px 0 rgba(255,255,255,0.9);
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    .floating-pill-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(#C8A265 0.75px, transparent 0.75px);
+      background-size: 13px 13px;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+    .floating-pill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px rgba(32, 49, 38, 0.15), 0 0 16px rgba(200, 162, 101, 0.25);
+      border-color: #C8A265;
+      background: #FFFFFF;
+    }
+
+    .floating-card-icon-area {
+      width: 100%;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card-hero-icon-svg {
+      width: auto;
+      height: 58px;
+      max-width: 95px;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.08));
+    }
+
+    .floating-pill-card:hover .card-hero-icon-svg {
+      transform: scale(1.09) translateY(-2px);
+    }
+
+    .floating-card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      color: #24352B;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      line-height: 1.25;
+      margin: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card-step-num {
+      color: #C88D3D;
+      font-weight: 900;
+      margin-right: 3px;
+    }
+
+    /* SECCIÓN "MÓDULOS DESTACADOS" (ESTILO REPRODUCTOR DE VIDEO / MOCKUP) */
+    .section-modules-featured {
+      padding: 40px 0 90px;
+      background: transparent;
+    }
+
+    .modules-section-title {
+      text-align: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: clamp(26px, 3.2vw, 36px);
+      font-weight: 900;
+      color: #1E2922;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 45px;
+    }
+
+    .modules-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .module-course-card {
+      background: #FFFFFF;
+      border: 1.5px solid #E2D5C3;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 28px rgba(32, 49, 38, 0.06);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .module-course-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(32, 49, 38, 0.12);
+      border-color: #E06D53;
+    }
+
+    .module-thumbnail-wrap {
+      position: relative;
+      width: 100%;
+      height: 160px;
+      background: #1C2B22;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .module-thumbnail-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.82;
+      transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    .module-course-card:hover .module-thumbnail-img {
+      transform: scale(1.05);
+      opacity: 0.95;
+    }
+
+    .module-play-btn {
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      background: rgba(224, 109, 83, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: var(--transition);
+      border: 2px solid #FFFFFF;
+    }
+
+    .module-course-card:hover .module-play-btn {
+      transform: scale(1.15);
+      background: #E06D53;
+    }
+
+    .module-card-body {
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .module-badge-tag {
+      font-size: 10px;
+      font-weight: 800;
+      color: #E06D53;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .module-title-h4 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      color: #2C4035;
+      text-transform: uppercase;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .module-progress-bar {
+      width: 100%;
+      height: 5px;
+      background: #ECE5DC;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: auto;
+    }
+
+    .module-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #C5A168 0%, #E06D53 100%);
+      border-radius: 999px;
+    }
+
+    /* BARRA DE ACREDITACIONES Y ASOCIACIONES (TRUST STRIP) */
+    .section-trust-bar {
+      padding: 26px 0;
+      background: #FFFFFF;
+      border-bottom: 1px solid var(--border-champagne);
+    }
+
+    .trust-flex-row {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .trust-pill-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13.5px;
+      font-weight: 750;
+      color: var(--text-dark);
+    }
+
+    .trust-pill-badge svg {
+      color: var(--brand-primary);
+      width: 20px;
+      height: 20px;
+    }
+
+    /* SECCIÓN ESTILO VILMA: "¡HEY! SOY VALDEMAR. TU MENTOR..." */
+    .section-about-mentor {
+      padding: 100px 0;
+      background: var(--bg-body);
+      border-bottom: 1px solid var(--border-champagne);
+    }
+
+    .mentor-story-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .mentor-frame-visual {
+      background: #FFFFFF;
+      border: 1px solid var(--border-champagne);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+    }
+
+    .mentor-photo-wrap {
+      width: 100%;
+      max-width: 340px;
+      margin: 0 auto 18px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(11, 19, 43, 0.1);
+      background: #0B132B;
+    }
+
+    .mentor-photo-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      image-rendering: -webkit-optimize-contrast;
+    }
+
+    .mentor-stats-mini {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .mini-stat-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-champagne);
+      padding: 12px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+    }
+
+    .mini-stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--brand-coral);
+    }
+
+    .mini-stat-txt {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .mentor-text-content h2 {
+      font-size: clamp(28px, 3.5vw, 42px);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 22px;
+    }
+
+    .mentor-text-content p {
+      font-size: 16px;
+      color: var(--text-body);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .mentor-quote-highlight {
+      border-left: 4px solid var(--brand-primary);
+      background: var(--bg-subtle);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 18px 22px;
+      margin: 26px 0;
+      font-size: 16.5px;
+      font-style: italic;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    .mentor-pills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .mentor-pill {
+      background: #FFFFFF;
+      border: 1px solid var(--border-champagne);
+      padding: 8px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-dark);
+      box-shadow: 0 1px 3px rgba(11, 19, 43, 0.04);
+    }
+
+    /* SECCIÓN ESTILO VILMA: "¿POR DÓNDE EMPEZAR? ELIGE TU OBJETIVO" */
+    .section-choose-path {
+      padding: 100px 0;
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border-champagne);
+    }
+
+    .section-center-header {
+      text-align: center;
+      max-width: 820px;
+      margin: 0 auto 55px;
+    }
+
+    .section-kicker {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--brand-coral);
+      font-weight: 800;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-headline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(30px, 4vw, 48px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: 0.01em;
+      margin-bottom: 16px;
+    }
+
+    .section-subheadline {
+      font-size: 16.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .paths-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .path-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-champagne);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .path-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--brand-primary);
+    }
+
+    .path-card-tag {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand-dark);
+      border: 1px solid var(--border-warm);
+      font-size: 12px;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 18px;
+    }
+
+    .path-card-title {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 14px;
+      color: var(--text-dark);
+      line-height: 1.3;
+    }
+
+    .path-card-desc {
+      font-size: 14.5px;
+      color: var(--text-body);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+
+    .path-card-points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .path-card-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    .path-card-points li span {
+      color: var(--brand-coral);
+      font-weight: bold;
+    }
+
+    .btn-path-action {
+      width: 100%;
+      padding: 14px;
+      border-radius: var(--radius-pill);
+      background: var(--bg-subtle);
+      border: 1.5px solid var(--border-champagne);
+      color: var(--text-dark);
+      font-weight: 750;
+      font-size: 14px;
+      text-align: center;
+      text-decoration: none;
+      transition: var(--transition);
+      display: block;
+    }
+
+    .path-card:hover .btn-path-action {
+      background: var(--brand-coral);
+      color: #FFFFFF;
+      border-color: var(--brand-coral);
+      box-shadow: var(--shadow-coral);
+    }
+
+    /* ========================================================
+       SECCIÓN: LOS 4 PILARES DEL MÉTODO CRECE 360
+       ======================================================== */
+    .section-pillars-explained {
+      padding: 100px 0;
+      background: var(--bg-body);
+      border-bottom: 1px solid var(--border-champagne);
+    }
+
+    .pillars-4-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+
+    .pillar-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border-champagne);
+      border-radius: var(--radius-md);
+      padding: 34px 26px;
+      transition: var(--transition);
+      position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .pillar-box:hover {
+      box-shadow: var(--shadow-md);
+      border-color: var(--brand-primary);
+      transform: translateY(-4px);
+    }
+
+    .pillar-icon-circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      background: var(--brand-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .pillar-heading {
+      font-size: 21px;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .pillar-tag {
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--brand-primary);
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .pillar-copy {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.6;
+    }
+
+    /* ========================================================
+       HERRAMIENTA VILMA STYLE: CALCULADORA FINANCIERA 360°
+       ======================================================== */
+    .section-calc-tool {
+      padding: 100px 0;
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border-champagne);
+    }
+
+    .calc-box-wrap {
+      background: #FFFFFF;
+      border: 1px solid var(--border-champagne);
+      border-radius: var(--radius-lg);
+      padding: 48px 42px;
+      box-shadow: var(--shadow-lg);
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .calc-slider-item {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+
+    .calc-slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .calc-slider-title {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .calc-slider-val {
+      font-family: 'Syne', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--brand-coral);
+      background: #FDF0EC;
+      border: 1px solid rgba(200, 75, 38, 0.2);
+      padding: 4px 14px;
+      border-radius: var(--radius-pill);
+    }
+
+    .calc-range-bar {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 8px;
+      border-radius: 4px;
+      background: #E8E4DA;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .calc-range-bar::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--brand-coral);
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(200, 75, 38, 0.4);
+      border: 2px solid #FFFFFF;
+    }
+
+    .calc-summary-panel {
+      background: linear-gradient(145deg, var(--navy-dark) 0%, var(--navy-card) 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 38px 32px;
+      box-shadow: 0 16px 36px rgba(7, 13, 30, 0.28);
+      border: 1px solid rgba(194, 155, 56, 0.25);
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .summary-metric-block {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding-bottom: 16px;
+    }
+
+    .summary-metric-block:last-of-type {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .summary-metric-label {
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #A3B1C6;
+      margin-bottom: 5px;
+    }
+
+    .summary-metric-value {
+      font-family: 'Syne', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+    }
+
+    .summary-metric-value.coral {
+      color: #FF8F6B;
+    }
+
+    .summary-metric-value.green {
+      color: #4ADE80;
+    }
+
+    /* SECCIÓN SHOWCASE EDITORIAL MIAMI (FOTOS NÍTIDAS) */
+    .section-editorial-showcase {
+      padding: 100px 0;
+      background: var(--bg-body);
+      border-bottom: 1px solid var(--border-champagne);
+    }
+
+    .showcase-dual-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .showcase-photo-card {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-champagne);
+      position: relative;
+    }
+
+    .showcase-photo-card img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .showcase-photo-card:hover img {
+      transform: scale(1.03);
+    }
+
+    .showcase-overlay-info {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(10px);
+      padding: 16px 22px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-champagne);
+    }
+
+    .showcase-overlay-info h4 {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 3px;
+    }
+
+    .showcase-overlay-info p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* SECCIÓN TESTIMONIOS */
+    .section-testimonials {
+      padding: 100px 0;
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border-champagne);
+    }
+
+    .testi-cards-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+      margin-top: 48px;
+    }
+
+    .testi-card-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border-champagne);
+      border-radius: var(--radius-lg);
+      padding: 36px 30px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .testi-stars-row {
+      color: #E5A823;
+      font-size: 16px;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+
+    .testi-text-quote {
+      font-size: 15px;
+      color: var(--text-body);
+      line-height: 1.68;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .testi-author-footer {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid var(--border-champagne);
+      padding-top: 16px;
+    }
+
+    .testi-initials-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--brand-light);
+      border: 1px solid var(--border-warm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: var(--brand-dark);
+    }
+
+    /* SECCIÓN PREGUNTAS FRECUENTES (ACORDEÓN) */
+    .section-faq-wrap {
+      padding: 100px 0;
+      background: var(--bg-body);
+      border-bottom: 1px solid var(--border-champagne);
+    }
+
+    .faq-accordion-list {
+      max-width: 820px;
+      margin: 44px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-accordion-item {
+      background: #FFFFFF;
+      border: 1px solid var(--border-champagne);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-accordion-item:hover {
+      border-color: var(--brand-primary);
+    }
+
+    .faq-btn-trigger {
+      padding: 22px 26px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: none;
+      border: none;
+      color: var(--text-dark);
+      font-size: 16.5px;
+      font-weight: 750;
+      text-align: left;
+      cursor: pointer;
+      font-family: 'Syne', sans-serif;
+    }
+
+    .faq-btn-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-champagne);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: transform 0.25s ease;
+      color: var(--text-dark);
+    }
+
+    .faq-accordion-item.active .faq-btn-icon {
+      transform: rotate(45deg);
+      background: var(--brand-coral);
+      color: #FFFFFF;
+      border-color: var(--brand-coral);
+    }
+
+    .faq-content-drawer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 26px;
+      color: var(--text-body);
+      font-size: 15px;
+      line-height: 1.68;
+    }
+
+    .faq-accordion-item.active .faq-content-drawer {
+      max-height: 350px;
+      padding: 0 26px 24px;
+    }
+
+    /* FORMULARIO DE POSTULACIÓN (ESTILO VILMA NÚÑEZ) */
+    .section-apply-form {
+      padding: 105px 0;
+      background: var(--bg-subtle);
+    }
+
+    .form-container-card {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border: 1px solid var(--border-champagne);
+      border-radius: var(--radius-lg);
+      padding: 52px 48px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-header-area {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .form-header-area h3 {
+      font-size: 34px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      color: var(--text-dark);
+      letter-spacing: -0.02em;
+    }
+
+    .form-header-area p {
+      font-size: 15.5px;
+      color: var(--text-muted);
+    }
+
+    .form-fields-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group-item {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group-item.full-span {
+      grid-column: span 2;
+    }
+
+    .form-label-txt {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .form-input-element, .form-select-element, .form-textarea-element {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border-champagne);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+      color: var(--text-dark);
+      font-size: 14.5px;
+      font-family: inherit;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-input-element:focus, .form-select-element:focus, .form-textarea-element:focus {
+      border-color: var(--brand-coral);
+      background: #FFFFFF;
+      box-shadow: 0 0 0 3px rgba(200, 75, 38, 0.15);
+    }
+
+    .form-submit-coral-btn {
+      width: 100%;
+      padding: 18px;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, var(--brand-coral) 0%, #D85A34 100%);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      box-shadow: var(--shadow-coral);
+      transition: var(--transition);
+      margin-top: 10px;
+    }
+
+    .form-submit-coral-btn:hover {
+      background: linear-gradient(135deg, var(--brand-coral-hover) 0%, #C84B26 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 34px rgba(200, 75, 38, 0.42);
+    }
+
+    .form-notice-fineprint {
+      text-align: center;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-top: 16px;
+    }
+
+    .form-success-feedback {
+      display: none;
+      text-align: center;
+      padding: 30px;
+      background: #ECFDF5;
+      border: 1.5px solid #10B981;
+      border-radius: var(--radius-md);
+      margin-top: 20px;
+    }
+
+    .form-success-feedback h4 {
+      font-size: 22px;
+      color: #047857;
+      margin-bottom: 8px;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(194, 155, 56, 0.3);
+      padding: 70px 0 34px;
+      background: var(--navy-dark);
+      color: #94A3B8;
+    }
+
+    .footer-columns-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand-bio p {
+      font-size: 14px;
+      color: #94A3B8;
+      margin-top: 14px;
+      max-width: 380px;
+      line-height: 1.6;
+    }
+
+    .footer-col-title {
+      font-size: 15px;
+      color: #FFFFFF;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .footer-links-group {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links-group a {
+      color: #94A3B8;
+      text-decoration: none;
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    .footer-links-group a:hover {
+      color: #FFFFFF;
+    }
+
+    .footer-bottom-bar {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: #64748B;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    /* BOTÓN FLOTANTE WHATSAPP */
+    .floating-whatsapp-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: var(--transition);
+      text-decoration: none;
+      color: #FFFFFF;
+    }
+
+    .floating-whatsapp-btn:hover {
+      transform: scale(1.08) translateY(-3px);
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.55);
+    }
+
+    .floating-whatsapp-btn svg {
+      width: 30px;
+      height: 30px;
+      fill: #FFFFFF;
+    }
+
+    /* MODAL CALENDLY */
+    .modal-overlay-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(10, 17, 40, 0.75);
+      backdrop-filter: blur(6px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+      padding: 20px;
+    }
+
+    .modal-overlay-bg.active {
+      display: flex;
+    }
+
+    .modal-inner-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      max-width: 620px;
+      width: 100%;
+      padding: 38px;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .modal-close-icon {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: var(--bg-subtle);
+      border: none;
+      color: var(--text-dark);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      transition: var(--transition);
+    }
+
+    .modal-close-icon:hover {
+      background: #FEE2E2;
+      color: #DC2626;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1180px) {
+      .nav-links {
+        gap: 14px;
+      }
+      .nav-links a {
+        font-size: 12.5px;
+      }
+      .btn-nav-action {
+        padding: 9px 18px;
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hero-mockup-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-mockup-buttons {
+        justify-content: center;
+      }
+      .hero-mockup-description {
+        margin: 0 auto 26px;
+      }
+      .hero-mockup-team-wrap {
+        margin-bottom: -36px;
+      }
+      .hero-mockup-team-img {
+        max-width: 430px;
+        margin: 0 auto;
+      }
+      .floating-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .modules-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .hero-grid, .mentor-story-grid, .calc-box-wrap {
+        grid-template-columns: 1fr;
+      }
+      .paths-grid, .pillars-4-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .showcase-dual-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 880px) {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-mockup-section {
+        padding: 28px 0 40px;
+      }
+      .hero-mockup-team-wrap {
+        margin-bottom: -24px;
+      }
+      .hero-mockup-team-img {
+        max-width: 360px;
+        margin: 0 auto;
+      }
+      .floating-cards-row-wrap {
+        margin-top: -30px;
+      }
+      .floating-cards-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .floating-pill-card {
+        padding: 14px 10px;
+      }
+      .floating-card-title {
+        font-size: 12.5px;
+      }
+      .modules-cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .floating-card-icon-area {
+        height: 48px;
+      }
+      .card-hero-icon-svg {
+        height: 44px;
+        max-width: 72px;
+      }
+      .floating-card-title {
+        font-size: 11px;
+      }
+      .logo-title {
+        font-size: 16px;
+      }
+      .logo-subtitle {
+        font-size: 8.5px;
+      }
+      .paths-grid, .pillars-4-grid, .testi-cards-row {
+        grid-template-columns: 1fr;
+      }
+      .form-fields-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-group-item.full-span {
+        grid-column: span 1;
+      }
+      .form-container-card {
+        padding: 28px 20px;
+      }
+      .footer-columns-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. NAVIGATION BAR (MOCKUP GOLD/CHAMPAGNE HEADER) -->
+  <header>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="logo-container">
+          <div class="logo-symbol-mockup">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#2C4035" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3v18h18"/>
+              <path d="M18 9l-5 5-4-4-3 3"/>
+              <polyline points="14 9 18 9 18 13"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title">CRECE 360</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#modulos">Módulos</a></li>
+          <li><a href="#sobre-valdemar">Mentores</a></li>
+          <li><a href="#calculadora">Calculadora</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+        </ul>
+
+        <div>
+          <a href="#aplicar" class="btn-mockup-coral">¡ACCEDE AHORA!</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION (CONTRASTE DE DOS COLORES: CURVA VERDE BOSQUE & FONDO ARENA) -->
+  <section class="hero-mockup-section" id="hero">
+    <!-- Silueta Orgánica Verde Bosque en Contraste con Fondo Arena del Mockup -->
+    <svg class="hero-curved-bg" viewBox="0 0 1440 560" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="heroTwoToneGreen" x1="0%" y1="0%" x2="70%" y2="100%">
+          <stop offset="0%" stop-color="#213529"/>
+          <stop offset="50%" stop-color="#2B4133"/>
+          <stop offset="100%" stop-color="#25382C"/>
+        </linearGradient>
+      </defs>
+      <!-- Curva que desciende en arco elegante hacia el cuadrante derecho inferior -->
+      <path d="M0,0 L920,0 C1040,110 1130,240 1260,560 L0,560 Z" fill="url(#heroTwoToneGreen)"/>
+      <circle cx="160" cy="500" r="180" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="30"/>
+    </svg>
+
+    <div class="container">
+      <div class="hero-mockup-grid">
+        <!-- Columna Izquierda: Headline & CTAs -->
+        <div>
+          <h1 class="hero-mockup-headline">
+            ELEVACIÓN PROFESIONAL:<br>
+            EL MÉTODO <span class="hero-mockup-gold-word">CRECE 360</span>.
+          </h1>
+
+          <p class="hero-mockup-description">
+            Una nueva era para el agente inmobiliario digital. Transforma tu carrera con nuestro sistema integral de capacitación y mentoría. <strong>¡Alcanza el éxito 360°!</strong>
+          </p>
+
+          <div class="hero-mockup-buttons">
+            <a href="#aplicar" class="btn-mockup-hero-coral">¡ACCEDE AHORA!</a>
+            <a href="#modulos" class="btn-mockup-hero-gold">EXPLORAR MÓDULOS</a>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Fotografía de Equipo Integrada Orgánica (Sin Tarjeta) -->
+        <div class="hero-mockup-team-wrap">
+          <img src="assets_crece360/hero_team_cutout_transparent.png" alt="Equipo de Mentores Método Crece 360" class="hero-mockup-team-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. LAS 4 TARJETAS FLOTANTES DEL MOCKUP (METODOLOGÍA) -->
+  <div class="container floating-cards-row-wrap">
+    <div class="floating-cards-grid">
+      <!-- Tarjeta 1: Captación Digital -->
+      <a href="#modulos" class="floating-pill-card">
+        <div class="floating-card-icon-area">
+          <svg class="card-hero-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="26" stroke="#2C4035" stroke-width="1.8" stroke-dasharray="2 3" opacity="0.6"/>
+            <circle cx="32" cy="32" r="20" stroke="#C8A265" stroke-width="2"/>
+            <circle cx="32" cy="32" r="11" stroke="#2C4035" stroke-width="1.6"/>
+            <line x1="32" y1="6" x2="32" y2="12" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="32" y1="52" x2="32" y2="58" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="6" y1="32" x2="12" y2="32" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="52" y1="32" x2="58" y2="32" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M25 39 L32 32 L36 36 L44 24" stroke="#2C4035" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="37 24 44 24 44 31" stroke="#2C4035" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="32" r="3.2" fill="#C8A265"/>
+          </svg>
+        </div>
+        <h4 class="floating-card-title"><span class="card-step-num">1.</span> CAPTACIÓN<br>DIGITAL</h4>
+      </a>
+
+      <!-- Tarjeta 2: CRM & Automatización -->
+      <a href="#modulos" class="floating-pill-card">
+        <div class="floating-card-icon-area">
+          <svg class="card-hero-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14" y="10" width="36" height="5" rx="2.5" fill="#2C4035"/>
+            <path d="M16 15 L26 31 V46 H38 V31 L48 15" stroke="#2C4035" stroke-width="2" stroke-linejoin="round"/>
+            <line x1="21" y1="21" x2="43" y2="21" stroke="#C8A265" stroke-width="2" stroke-linecap="round"/>
+            <line x1="25" y1="28" x2="39" y2="28" stroke="#C8A265" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="32" cy="46" r="3.5" fill="#C8A265"/>
+            <line x1="32" y1="49" x2="32" y2="56" stroke="#C8A265" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="22" cy="56" r="3" stroke="#2C4035" stroke-width="1.8" fill="#FFFDF9"/>
+            <circle cx="32" cy="56" r="3" stroke="#2C4035" stroke-width="1.8" fill="#2C4035"/>
+            <circle cx="42" cy="56" r="3" stroke="#2C4035" stroke-width="1.8" fill="#FFFDF9"/>
+            <line x1="25" y1="56" x2="29" y2="56" stroke="#C8A265" stroke-width="1.8"/>
+            <line x1="35" y1="56" x2="39" y2="56" stroke="#C8A265" stroke-width="1.8"/>
+          </svg>
+        </div>
+        <h4 class="floating-card-title"><span class="card-step-num">2.</span> CRM &<br>AUTOMATIZACIÓN</h4>
+      </a>
+
+      <!-- Tarjeta 3: Marca & Autoridad -->
+      <a href="#modulos" class="floating-pill-card">
+        <div class="floating-card-icon-area">
+          <svg class="card-hero-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="32,7 39,18 52,18 43,28 47,41 35,35 32,37 29,35 17,41 21,28 12,18 25,18" 
+                     stroke="#C8A265" stroke-width="1.8" stroke-linejoin="round" fill="rgba(200, 162, 101, 0.08)"/>
+            <circle cx="32" cy="27" r="9" stroke="#2C4035" stroke-width="2" fill="#FFFFFF"/>
+            <path d="M32 21 L33.8 25.2 L38 25.6 L34.8 28.5 L35.8 32.8 L32 30.5 L28.2 32.8 L29.2 28.5 L26 25.6 L30.2 25.2 Z" 
+                  fill="#C8A265"/>
+            <path d="M16 46 C18 52 24 57 32 57 C40 57 46 52 48 46" stroke="#2C4035" stroke-width="2" stroke-linecap="round"/>
+            <path d="M12 43 C14 47 17 50 21 52" stroke="#C8A265" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M52 43 C50 47 47 50 43 52" stroke="#C8A265" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="32" cy="57" r="2" fill="#2C4035"/>
+          </svg>
+        </div>
+        <h4 class="floating-card-title"><span class="card-step-num">3.</span> MARCA &<br>AUTORIDAD</h4>
+      </a>
+
+      <!-- Tarjeta 4: Estrategias de Cierre -->
+      <a href="#modulos" class="floating-pill-card">
+        <div class="floating-card-icon-area">
+          <svg class="card-hero-icon-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="13" y="10" width="28" height="38" rx="3" stroke="#2C4035" stroke-width="2" fill="#FFFFFF"/>
+            <path d="M33 10 L41 18 H35 C33.9 18 33 17.1 33 16 V10 Z" fill="#2C4035"/>
+            <line x1="19" y1="20" x2="29" y2="20" stroke="#C8A265" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="19" y1="26" x2="35" y2="26" stroke="#C8A265" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="19" y1="32" x2="33" y2="32" stroke="#C8A265" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="19" y1="38" x2="27" y2="38" stroke="#C8A265" stroke-width="1.8" stroke-linecap="round"/>
+            <g transform="translate(34, 26)">
+              <circle cx="13" cy="13" r="8" stroke="#2C4035" stroke-width="2" fill="#FFFDF9"/>
+              <circle cx="13" cy="13" r="3.2" fill="#C8A265"/>
+              <path d="M7 19 L-4 30" stroke="#2C4035" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M-1 27 L-3 25" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M-4 30 L-6 28" stroke="#C8A265" stroke-width="2.2" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+        <h4 class="floating-card-title"><span class="card-step-num">4.</span> ESTRATEGIAS<br>DE CIERRE</h4>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- 4. SECCIÓN "MÓDULOS DESTACADOS" (DEL MOCKUP) -->
+  <section class="section-modules-featured" id="modulos">
+    <div class="container">
+      <h2 class="modules-section-title">MÓDULOS DESTACADOS</h2>
+
+      <div class="modules-cards-grid">
+        <!-- Módulo 1 -->
+        <div class="module-course-card">
+          <div class="module-thumbnail-wrap">
+            <img src="assets_crece360/hero_team_executives_1789785509552.jpg" alt="Captación Digital" class="module-thumbnail-img" style="object-position: left center;">
+            <div class="module-play-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+          <div class="module-card-body">
+            <span class="module-badge-tag">Módulo 01</span>
+            <h4 class="module-title-h4">Captación Digital (Inbound Leads)</h4>
+            <div class="module-progress-bar">
+              <div class="module-progress-fill" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Módulo 2 -->
+        <div class="module-course-card">
+          <div class="module-thumbnail-wrap">
+            <img src="assets_crece360/valdemar_burdman_real.png" alt="CRM & Automatización" class="module-thumbnail-img" style="object-position: center top;">
+            <div class="module-play-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+          <div class="module-card-body">
+            <span class="module-badge-tag">Módulo 02</span>
+            <h4 class="module-title-h4">CRM & Automatización de Embudos</h4>
+            <div class="module-progress-bar">
+              <div class="module-progress-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Módulo 3 -->
+        <div class="module-course-card">
+          <div class="module-thumbnail-wrap">
+            <img src="assets_crece360/hero_team_executives_1789785509552.jpg" alt="Marca Personal & Autoridad" class="module-thumbnail-img" style="object-position: center top;">
+            <div class="module-play-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+          <div class="module-card-body">
+            <span class="module-badge-tag">Módulo 03</span>
+            <h4 class="module-title-h4">Marca Personal & Autoridad Inbound</h4>
+            <div class="module-progress-bar">
+              <div class="module-progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Módulo 4 -->
+        <div class="module-course-card">
+          <div class="module-thumbnail-wrap">
+            <img src="assets_crece360/valdemar_burdman_real.png" alt="Estrategias de Cierre" class="module-thumbnail-img" style="object-position: center 20%;">
+            <div class="module-play-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+          <div class="module-card-body">
+            <span class="module-badge-tag">Módulo 04</span>
+            <h4 class="module-title-h4">Estrategias de Cierre & Negociación</h4>
+            <div class="module-progress-bar">
+              <div class="module-progress-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. TRUST BAR / ACREDITACIONES -->
+  <section class="section-trust-bar">
+    <div class="container">
+      <div class="trust-flex-row">
+        <div class="trust-pill-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>+20 Años de Experiencia en Miami</span>
+        </div>
+        <div class="trust-pill-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>National Association of Realtors® (NAR)</span>
+        </div>
+        <div class="trust-pill-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>Miami Association of Realtors®</span>
+        </div>
+        <div class="trust-pill-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>Certificado en Short Sales & Distressed Properties</span>
+        </div>
+        <div class="trust-pill-badge">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>eXp Realty Partner</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. SECCIÓN ESTILO VILMA: "¡HEY! SOY VALDEMAR. TU MENTOR..." -->
+  <section class="section-about-mentor" id="sobre-valdemar">
+    <div class="container">
+      <div class="mentor-story-grid">
+        <!-- Foto Real Nítida en Tarjeta Editorial -->
+        <div class="mentor-frame-visual">
+          <div class="mentor-photo-wrap">
+            <img src="assets_crece360/valdemar_burdman_real.png" alt="Valdemar Burdman Agente Inmobiliario Miami">
+          </div>
+          <h4 style="font-size: 22px; font-weight: 800; margin-bottom: 2px;">Valdemar Burdman</h4>
+          <span style="font-size: 13px; color: var(--brand-coral); font-weight: 800; text-transform: uppercase;">Broker • Inversiones • Mentor de Agentes</span>
+
+          <div class="mentor-stats-mini">
+            <div class="mini-stat-card">
+              <div class="mini-stat-num">+25 Años</div>
+              <div class="mini-stat-txt">Viviendo en Miami</div>
+            </div>
+            <div class="mini-stat-card">
+              <div class="mini-stat-num">+2,500</div>
+              <div class="mini-stat-txt">Visión con eXp</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copywriting en Primera Persona (Cercano, Humano, Autoridad Leon Home Style) -->
+        <div class="mentor-text-content">
+          <span class="section-kicker">Conoce a tu Mentor</span>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 3.8vw, 44px); font-weight: 800; line-height: 1.16; margin-bottom: 22px;">Experiencia, Criterio & Excelencia en Bienes Raíces</h2>
+          
+          <p>
+            Es muy probable que hayas visto mis transacciones en el sur de la Florida o alguno de mis análisis sobre inversiones inmobiliarias. Durante más de dos décadas, he guiado a familias e inversionistas internacionales a proteger su patrimonio y multiplicar sus activos mediante bienes raíces estratégicos.
+          </p>
+          <p>
+            Como creador del <strong>Método Crece 360®</strong>, mi propósito va mucho más allá de vender propiedades: diseñé este sistema integral para que agentes inmobiliarios talentosos dejen de sentirse solos, improvisando semana tras semana, y tengan un método predecible que les permita duplicar su producción y tener tiempo de calidad para lo que de verdad importa.
+          </p>
+
+          <div class="mentor-quote-highlight">
+            “Tu negocio no cambia por hacer más, sino por ser mejor. Cuando te enfocas cada día en tus habilidades, <strong>TODO CAMBIA</strong>.”
+          </div>
+
+          <p>
+            Para mí, el éxito es equilibrio: familia, salud, dinero, libertad y propósito en armonía. Soy padre de tres hijos, deportista y un apasionado del motocross. Recorro las carreteras de Estados Unidos en moto para recordarme que la vida es movimiento, aventura y presencia.
+          </p>
+
+          <div class="mentor-pills-row">
+            <span class="mentor-pill">📍 Miami, Florida</span>
+            <span class="mentor-pill">🤝 eXp Realty Leader</span>
+            <span class="mentor-pill">🌐 Inversionistas Globales (+50% LatAm)</span>
+            <span class="mentor-pill">🏍️ Equilibrio & Salud</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 8. RECURSO INTERACTIVO ESTILO VILMA: CALCULADORA FINANCIERA 360° -->
+  <section class="section-calc-tool" id="calculadora">
+    <div class="container">
+      <div class="section-center-header">
+        <span class="section-kicker">Herramienta Gratuita Interactiva</span>
+        <h2 class="section-headline">Calcula tu Potencial de Ingresos 360°</h2>
+        <p class="section-subheadline">
+          Descubre en tiempo real cuánto dinero puedes generar combinando ventas asistidas de alto valor con el modelo de Revenue Share de eXp:
+        </p>
+      </div>
+
+      <div class="calc-box-wrap">
+        <div>
+          <div class="calc-slider-item">
+            <div class="calc-slider-header">
+              <span class="calc-slider-title">1. ¿Cuántas transacciones cierras al año actualmente?</span>
+              <span class="calc-slider-val" id="dealsBadge">4 ventas</span>
+            </div>
+            <input type="range" min="1" max="25" value="4" class="calc-range-bar" id="dealsRange" oninput="runSimCalc()">
+          </div>
+
+          <div class="calc-slider-item">
+            <div class="calc-slider-header">
+              <span class="calc-slider-title">2. Precio promedio de las propiedades:</span>
+              <span class="calc-slider-val" id="priceBadge">$550,000 USD</span>
+            </div>
+            <input type="range" min="300000" max="2500000" step="50000" value="550000" class="calc-range-bar" id="priceRange" oninput="runSimCalc()">
+          </div>
+
+          <div class="calc-slider-item">
+            <div class="calc-slider-header">
+              <span class="calc-slider-title">3. Agentes que deseas liderar en tu equipo eXp:</span>
+              <span class="calc-slider-val" id="agentsBadge">5 agentes</span>
+            </div>
+            <input type="range" min="0" max="25" value="5" class="calc-range-bar" id="agentsRange" oninput="runSimCalc()">
+          </div>
+
+          <p style="font-size: 13px; color: var(--text-muted); line-height: 1.5; margin-top: 15px;">
+            💡 <em>Proyección estimada considerando 3% de comisión promedio, aceleración de cierres del 40% con el Método Crece 360® y Revenue Share Tier 1 eXp ($3,200/agente cap).</em>
+          </p>
+        </div>
+
+        <div class="calc-summary-panel">
+          <div class="summary-metric-block">
+            <div class="summary-metric-label">Comisiones Anuales Estimadas (Ventas Directas)</div>
+            <div class="summary-metric-value" id="calcCommissionsVal">$92,400 USD</div>
+          </div>
+
+          <div class="summary-metric-block">
+            <div class="summary-metric-label">Ingreso Residual Anual Recurrente (eXp Revenue Share)</div>
+            <div class="summary-metric-value coral" id="calcResidualVal">$16,000 USD / año</div>
+          </div>
+
+          <div class="summary-metric-block">
+            <div class="summary-metric-label">Potencial Total Anual Combinado</div>
+            <div class="summary-metric-value green" id="calcTotalVal">$108,400 USD</div>
+          </div>
+
+          <a href="#aplicar" class="btn-coral-lg" style="width: 100%; justify-content: center; text-align: center; margin-top: 10px;">
+            Construir este Plan con Valdemar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 10. TESTIMONIOS Y CASOS DE ÉXITO -->
+  <section class="section-testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-center-header">
+        <span class="section-kicker">Historias Reales de Crecimiento</span>
+        <h2 class="section-headline">Lo que dicen los agentes de nuestro equipo</h2>
+        <p class="section-subheadline">
+          Resultados comprobados de profesionales que decidieron implementar un sistema predecible:
+        </p>
+      </div>
+
+      <div class="testi-cards-row">
+        <div class="testi-card-box">
+          <div>
+            <div class="testi-stars-row">★★★★★</div>
+            <p class="testi-text-quote">
+              “Llevaba dos años sin superar las 4 ventas anuales. Con el Método Crece 360® y el acompañamiento directo de Valdemar en las negociaciones, cerré 3 propiedades internacionales en mis primeros 90 días.”
+            </p>
+          </div>
+          <div class="testi-author-footer">
+            <div class="testi-initials-avatar">CR</div>
+            <div>
+              <div style="font-weight: 800; font-size: 15px; color: var(--text-dark);">Carlos R.</div>
+              <div style="font-size: 12.5px; color: var(--text-muted);">Agente Asociado — Miami</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card-box">
+          <div>
+            <div class="testi-stars-row">★★★★★</div>
+            <p class="testi-text-quote">
+              “Lo más valioso es que no estás solo. Tienes acceso a un criterio de más de 20 años que te salva de cometer errores costosos y te enseña a hablar el idioma de los verdaderos inversionistas.”
+            </p>
+          </div>
+          <div class="testi-author-footer">
+            <div class="testi-initials-avatar">MA</div>
+            <div>
+              <div style="font-weight: 800; font-size: 15px; color: var(--text-dark);">María Alejandra M.</div>
+              <div style="font-size: 12.5px; color: var(--text-muted);">Top Producer Residencial</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card-box">
+          <div>
+            <div class="testi-stars-row">★★★★★</div>
+            <p class="testi-text-quote">
+              “No solo multipliqué mi producción por tres, sino que hoy genero ingresos residuales que me dan paz mental cada mes. Por fin tengo tiempo de calidad para mis hijos sin descuidar mi negocio.”
+            </p>
+          </div>
+          <div class="testi-author-footer">
+            <div class="testi-initials-avatar">JG</div>
+            <div>
+              <div style="font-weight: 800; font-size: 15px; color: var(--text-dark);">Jorge G.</div>
+              <div style="font-size: 12.5px; color: var(--text-muted);">Broker Associate & Team Leader</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. PREGUNTAS FRECUENTES (ACORDEÓN) -->
+  <section class="section-faq-wrap" id="faq">
+    <div class="container">
+      <div class="section-center-header">
+        <span class="section-kicker">Respuestas Claras</span>
+        <h2 class="section-headline">Preguntas Frecuentes</h2>
+        <p class="section-subheadline">
+          Todo lo que necesitas saber antes de postularte y acceder al Método Crece 360®:
+        </p>
+      </div>
+
+      <div class="faq-accordion-list">
+        <div class="faq-accordion-item">
+          <button class="faq-btn-trigger" onclick="toggleAccordion(this)">
+            <span>¿Necesito tener licencia activa de Real Estate en Florida?</span>
+            <div class="faq-btn-icon">+</div>
+          </button>
+          <div class="faq-content-drawer">
+            Sí, debes contar con tu licencia de Real Estate activa en Florida o encontrarte en las semanas finales del curso estatal para tramitarla e incorporarte inmediatamente.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-btn-trigger" onclick="toggleAccordion(this)">
+            <span>¿Cómo funciona la mentoría directa con Valdemar?</span>
+            <div class="faq-btn-icon">+</div>
+          </button>
+          <div class="faq-content-drawer">
+            Tendrás acceso a sesiones estratégicas semanales de coaching, análisis táctico de tus prospectos calientes, revisión de contratos antes de firmar y acompañamiento directo en transacciones de alto valor.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-btn-trigger" onclick="toggleAccordion(this)">
+            <span>¿Tiene algún costo de membresía acceder al Método Crece 360®?</span>
+            <div class="faq-btn-icon">+</div>
+          </button>
+          <div class="faq-content-drawer">
+            No cobramos honorarios de mentoría por separado ni cuotas ocultas. Nos integramos bajo el modelo de corretaje de eXp Realty con un split de comisión transparente y altamente competitivo.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-btn-trigger" onclick="toggleAccordion(this)">
+            <span>¿Cómo me ayudan con la captación de compradores e inversionistas?</span>
+            <div class="faq-btn-icon">+</div>
+          </button>
+          <div class="faq-content-drawer">
+            Te proporcionamos campañas probadas, guiones de prospección para compradores de Latinoamérica y Estados Unidos, inventario de pre-construcción con incentivos para brokers y herramientas digitales de seguimiento automatizado.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <button class="faq-btn-trigger" onclick="toggleAccordion(this)">
+            <span>¿Qué es el ingreso residual con eXp Realty?</span>
+            <div class="faq-btn-icon">+</div>
+          </button>
+          <div class="faq-content-drawer">
+            Es el modelo de Revenue Share de eXp Realty: cuando invitas a otros agentes a formar parte de la compañía y ellos producen, la empresa comparte un porcentaje de sus ingresos contigo sin descontarle un solo centavo al agente asociado.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FORMULARIO DE POSTULACIÓN DE ALTO IMPACTO (ESTILO VILMA NÚÑEZ) -->
+  <section class="section-apply-form" id="aplicar">
+    <div class="container">
+      <div class="form-container-card">
+        <div class="form-header-area">
+          <span class="section-kicker">Postulación Exclusiva</span>
+          <h3>Aplica para Unirte al Método Crece 360®</h3>
+          <p>Completa tus datos y analizaremos tu perfil para coordinar tu sesión de evaluación 1-a-1 con Valdemar Burdman.</p>
+        </div>
+
+        <form id="leadApplicationForm" onsubmit="handleLeadSubmit(event)" action="https://example.com/api/leads" method="POST">
+          <input type="hidden" name="utm_source" id="utm_source" value="">
+          <input type="hidden" name="utm_medium" id="utm_medium" value="">
+          <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
+          <input type="hidden" name="utm_content" id="utm_content" value="">
+          <input type="hidden" name="utm_term" id="utm_term" value="">
+          <input type="hidden" name="page_origin" value="metodocrece360.com">
+
+          <div class="form-fields-grid">
+            <div class="form-group-item">
+              <label class="form-label-txt" for="full_name">Nombre y Apellido *</label>
+              <input type="text" id="full_name" name="full_name" class="form-input-element" placeholder="Ej. Carlos Mendoza" required>
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-txt" for="email">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" class="form-input-element" placeholder="carlos@gmail.com" required>
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-txt" for="phone">Teléfono / WhatsApp *</label>
+              <input type="tel" id="phone" name="phone" class="form-input-element" placeholder="+1 (786) 000-0000" required>
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-txt" for="experience">Experiencia en Bienes Raíces *</label>
+              <select id="experience" name="experience" class="form-select-element" required>
+                <option value="">Selecciona tu experiencia...</option>
+                <option value="licencia_en_tramite">Licencia en trámite</option>
+                <option value="menos_1_ano">Menos de 1 año</option>
+                <option value="1_a_3_anos">1 a 3 años</option>
+                <option value="3_a_5_anos">3 a 5 años</option>
+                <option value="mas_5_anos">Más de 5 años</option>
+              </select>
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-txt" for="annual_production">Producción Anual Promedio *</label>
+              <select id="annual_production" name="annual_production" class="form-select-element" required>
+                <option value="">Selecciona tu rango de ventas...</option>
+                <option value="0_a_2">0 a 2 transacciones</option>
+                <option value="3_a_7">3 a 7 transacciones</option>
+                <option value="8_a_15">8 a 15 transacciones</option>
+                <option value="mas_16">Más de 16 transacciones (Top Producer)</option>
+              </select>
+            </div>
+
+            <div class="form-group-item">
+              <label class="form-label-txt" for="focus_market">Enfoque Principal *</label>
+              <select id="focus_market" name="focus_market" class="form-select-element" required>
+                <option value="">Selecciona tu mercado...</option>
+                <option value="residencial_local">Residencial Local</option>
+                <option value="inversion_latam">Inversionistas de Latinoamérica</option>
+                <option value="preconstruccion_lujo">Pre-construcción & Lujo</option>
+                <option value="comercial">Comercial / Terrenos</option>
+                <option value="mixto">Mixto</option>
+              </select>
+            </div>
+
+            <div class="form-group-item full-span">
+              <label class="form-label-txt" for="goal_note">¿Cuál es tu mayor desafío actual o tu meta de ingresos para los próximos 6 meses?</label>
+              <textarea id="goal_note" name="goal_note" class="form-textarea-element" rows="3" placeholder="Ej. Deseo captar inversionistas internacionales y superar los $150K con un sistema ordenado..."></textarea>
+            </div>
+
+            <div class="form-group-item full-span">
+              <button type="submit" class="form-submit-coral-btn" id="submitButton">
+                🚀 Enviar Solicitud & Agendar Evaluación 1-a-1
+              </button>
+            </div>
+          </div>
+
+          <div class="form-notice-fineprint">
+            Tus datos están protegidos bajo estricta confidencialidad. 
+            Al enviar este formulario aceptas ser contactado para coordinar tu llamada estratégica.
+          </div>
+        </form>
+
+        <div class="form-success-feedback" id="formFeedbackSuccess">
+          <h4>¡Solicitud Recibida con Éxito! 🎉</h4>
+          <p style="color: var(--text-muted); margin-bottom: 18px;">
+            Gracias por postularte. Revisaremos tu información y te contactaremos en menos de 24 horas para fijar tu sesión con Valdemar.
+          </p>
+          <a href="https://wa.me/13050000000?text=Hola%20Valdemar,%20acabo%20de%20enviar%20mi%20aplicacion%20para%20el%20Metodo%20Crece%20360" target="_blank" class="btn-coral-lg" style="display: inline-flex;">
+            Confirmar por WhatsApp Inmediatamente
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-columns-grid">
+        <div class="footer-brand-bio">
+          <div class="logo-container" style="margin-bottom: 14px;">
+            <img src="assets_crece360/logo_metodo_crece_360.png" alt="Método Crece 360 Logo" style="height: 48px; background: #fff; padding: 4px; border-radius: 8px;">
+            <div class="logo-text">
+              <span class="logo-title" style="color: #fff;">MÉTODO CRECE 360®</span>
+              <span class="logo-subtitle" style="color: var(--brand-coral);">SISTEMA DE ALTO RENDIMIENTO INMOBILIARIO</span>
+            </div>
+          </div>
+          <p>
+            Guiando a agentes inmobiliarios a duplicar su producción, profesionalizar sus operaciones y generar verdadera riqueza residual sin sacrificar su vida personal.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Navegación</h5>
+          <ul class="footer-links-group">
+            <li><a href="#hero">El Método Crece 360</a></li>
+            <li><a href="#modulos">Módulos Destacados</a></li>
+            <li><a href="#sobre-valdemar">Sobre Valdemar</a></li>
+            <li><a href="#calculadora">Calculadora de Ingresos</a></li>
+            <li><a href="#testimonios">Casos de Éxito</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="footer-col-title">Contacto & Ubicación</h5>
+          <ul class="footer-links-group">
+            <li><span style="color: #fff;">📍 Miami, Florida — USA</span></li>
+            <li><a href="https://valdemarburdman.com" target="_blank">🌐 valdemarburdman.com</a></li>
+            <li><a href="https://metodocrece360.com" target="_blank">🚀 metodocrece360.com</a></li>
+            <li><span style="color: #FBBF24; font-weight: 700;">🏆 eXp Realty Partner</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Método Crece 360®. Todos los derechos reservados.
+        </div>
+        <div>
+          Inversiones inteligentes. Resultados comprobados. Donde la experiencia crea oportunidades.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/13050000000?text=Hola%20Valdemar,%20soy%20agente%20inmobiliario%20y%20quiero%20conocer%20el%20Metodo%20Crece%20360" target="_blank" class="floating-whatsapp-btn" title="Escríbeme por WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <!-- MODAL CALENDLY / LLAMADA -->
+  <div class="modal-overlay-bg" id="calendlyModalOverlay">
+    <div class="modal-inner-card">
+      <button class="modal-close-icon" onclick="closeCalendlyModal()">&times;</button>
+      <div style="text-align: center; margin-bottom: 24px;">
+        <span class="tag-hero-mentor" style="margin-bottom: 10px;">Sesión Privada 1-a-1</span>
+        <h3 style="font-size: 26px; font-weight: 800; margin-bottom: 8px;">Agenda tu Llamada con Valdemar</h3>
+        <p style="color: var(--text-muted); font-size: 14.5px;">
+          Analizaremos tu negocio en 20 minutos para determinar si el Método Crece 360® es el paso adecuado para ti.
+        </p>
+      </div>
+
+      <div style="background: var(--bg-subtle); border: 1.5px dashed var(--border-light); padding: 32px; border-radius: var(--radius-md); text-align: center;">
+        <div style="font-size: 40px; margin-bottom: 12px;">📅</div>
+        <h4 style="font-size: 18px; margin-bottom: 8px; color: var(--text-dark);">Calendario de Disponibilidad Directa</h4>
+        <p style="color: var(--text-muted); font-size: 13.5px; margin-bottom: 20px;">
+          Selecciona la fecha y el horario que mejor te convenga directamente en nuestra agenda.
+        </p>
+        <a href="https://calendly.com" target="_blank" class="btn-coral-lg" style="display: inline-flex;">
+          Abrir Calendario Oficial
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT: CALCULADORA, ACORDEÓN, MODAL & UTMS -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    // 1. Captura automática de UTMs
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const utmFields = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+      
+      utmFields.forEach(field => {
+        const value = urlParams.get(field);
+        if (value) {
+          const inputEl = document.getElementById(field);
+          if (inputEl) inputEl.value = value;
+        }
+      });
+
+      window.dataLayer.push({
+        event: 'view_metodocrece360_vilma_style',
+        page_title: document.title,
+        timestamp: new Date().toISOString()
+      });
+
+      runSimCalc();
+    });
+
+    // 2. Lógica de la Calculadora de Ingresos
+    function formatUSD(val) {
+      return '$' + Math.round(val).toLocaleString('en-US') + ' USD';
+    }
+
+    function runSimCalc() {
+      const deals = parseInt(document.getElementById('dealsRange').value, 10);
+      const price = parseInt(document.getElementById('priceRange').value, 10);
+      const agents = parseInt(document.getElementById('agentsRange').value, 10);
+
+      document.getElementById('dealsBadge').innerText = deals + (deals === 1 ? ' venta' : ' ventas');
+      document.getElementById('priceBadge').innerText = '$' + price.toLocaleString('en-US') + ' USD';
+      document.getElementById('agentsBadge').innerText = agents + (agents === 1 ? ' agente' : ' agentes');
+
+      // Ventas directas aceleradas con el método (+40%)
+      const projectedDeals = Math.max(deals, Math.round(deals * 1.4));
+      const totalCommissions = projectedDeals * price * 0.03 * 0.80; // Split eXp 80%
+
+      // Revenue share: ~$3,200/agente anual al cappear
+      const residualAnnual = agents * 3200;
+      const totalAnnual = totalCommissions + residualAnnual;
+
+      document.getElementById('calcCommissionsVal').innerText = formatUSD(totalCommissions);
+      document.getElementById('calcResidualVal').innerText = formatUSD(residualAnnual) + ' / año';
+      document.getElementById('calcTotalVal').innerText = formatUSD(totalAnnual);
+    }
+
+    // 3. Acordeón de FAQs
+    function toggleAccordion(btn) {
+      const item = btn.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-accordion-item').forEach(el => el.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    }
+
+    // 4. Modal Calendly
+    function openCalendlyModal() {
+      document.getElementById('calendlyModalOverlay').classList.add('active');
+      window.dataLayer.push({ event: 'open_calendly_modal' });
+    }
+
+    function closeCalendlyModal() {
+      document.getElementById('calendlyModalOverlay').classList.remove('active');
+    }
+
+    window.addEventListener('click', (e) => {
+      const modal = document.getElementById('calendlyModalOverlay');
+      if (e.target === modal) closeCalendlyModal();
+    });
+
+    // 5. Envío de Formulario
+    async function handleLeadSubmit(event) {
+      event.preventDefault();
+      const form = document.getElementById('leadApplicationForm');
+      const submitBtn = document.getElementById('submitButton');
+      const feedback = document.getElementById('formFeedbackSuccess');
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'Procesando tu postulación...';
+
+      window.dataLayer.push({
+        event: 'lead_application_submitted',
+        lead_experience: data.experience,
+        lead_production: data.annual_production,
+        lead_focus: data.focus_market,
+        utm_source: data.utm_source || 'direct'
+      });
+
+      setTimeout(() => {
+        form.style.display = 'none';
+        feedback.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.innerText = '🚀 Enviar Solicitud & Agendar Evaluación 1-a-1';
+      }, 500);
+    }
+  </script>
+</body>
+</html>
