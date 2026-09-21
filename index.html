@@ -2411,7 +2411,7 @@
               <div class="hero-quick-qr-title">Inscripción Directa ($875 USD)</div>
               <div class="hero-quick-qr-sub">Escanea o haz clic para pagar vía Stripe</div>
             </div>
-            <a href="#checkout" class="hero-quick-qr-btn">PAGAR CON QR / STRIPE →</a>
+            <a href="https://link.fastpaydirect.com/payment-link/6ab19ca0f426560dbc2f1833" target="_blank" class="hero-quick-qr-btn">PAGAR $875 CON QR / TARJETA →</a>
           </div>
         </div>
 
@@ -2825,7 +2825,7 @@
 
           <div>
             <!-- Botón de Pago Oficial Stripe con Resplandor Dorado -->
-            <a href="javascript:void(0)" onclick="iniciarPagoCrece360()" class="btn-hero-submit" style="height: 52px; font-size: 15px; text-decoration: none; border-radius: 12px; margin-bottom: 12px;">
+            <a href="https://link.fastpaydirect.com/payment-link/6ab19ca0f426560dbc2f1833" target="_blank" onclick="iniciarPagoCrece360(event)" class="btn-hero-submit" style="height: 52px; font-size: 15px; text-decoration: none; border-radius: 12px; margin-bottom: 12px;">
               <span>🔒 INSCRIBIRME AL MÉTODO ($875 USD)</span>
             </a>
 
@@ -2857,9 +2857,9 @@
             </p>
 
             <!-- Frame del Código QR con Emblema -->
-            <div class="qr-image-frame">
-              <img src="assets_crece360/qr_pago_stripe.png" alt="Código QR Pago Stripe Método Crece 360" class="qr-image-img">
-            </div>
+            <a href="https://link.fastpaydirect.com/payment-link/6ab19ca0f426560dbc2f1833" target="_blank" class="qr-image-frame" title="Clic para abrir pasarela de pago">
+              <img src="assets_crece360/qr_pago_stripe.png" alt="Código QR Pago Método Crece 360" class="qr-image-img">
+            </a>
 
             <!-- Pasos Rápidos -->
             <div style="text-align: left; font-size: 12.5px; color: #D6DCE5; line-height: 1.6; max-width: 280px; margin: 0 auto;">
@@ -2876,8 +2876,8 @@
           </div>
 
           <div style="margin-top: 18px; width: 100%;">
-            <a href="javascript:void(0)" onclick="iniciarPagoCrece360()" class="btn-mockup-coral" style="width: 100%; height: 46px; font-size: 13px;">
-              <span>ABRIR CHECKOUT EN LÍNEA →</span>
+            <a href="https://link.fastpaydirect.com/payment-link/6ab19ca0f426560dbc2f1833" target="_blank" class="btn-mockup-coral" style="width: 100%; height: 46px; font-size: 13px;">
+              <span>ABRIR PASARELA DE PAGO ($875 USD) →</span>
             </a>
           </div>
         </div>
@@ -3233,12 +3233,12 @@
       }, 500);
     }
   
-  // Pasarela de Pago Stripe Oficial
-  function iniciarPagoCrece360() {
-    // Si hay un modal o link directo de Stripe:
-    alert("Iniciando conexión segura con Stripe Checkout ($875 USD)...\n\nRedirigiendo a la pasarela cifrada SSL 256-Bit para completar tu inscripción al Método Crece 360®.");
-    // Aquí puedes vincular tu enlace de pago oficial de Stripe (Payment Link):
-    // window.open('https://buy.stripe.com/TU_LINK_DE_STRIPE', '_blank');
+  // Pasarela de Pago Oficial FastPay / Stripe
+  function iniciarPagoCrece360(e) {
+    // Abre el checkout oficial en pestaña segura
+    const checkoutUrl = 'https://link.fastpaydirect.com/payment-link/6ab19ca0f426560dbc2f1833';
+    window.open(checkoutUrl, '_blank');
+    if (e) e.preventDefault();
   }
 
 </script>
